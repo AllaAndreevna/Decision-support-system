@@ -1,0 +1,129 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding: 0 100px;
+    background: url('https://mirceramici.ru/upload/iblock/e19/rmwhjnexn90ctddbarpo1923cix52r1h.jpg');
+    background-size: cover;
+    height: 850px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.frame {
+    position: relative;
+    max-width: 600px;
+    padding: 40px;
+
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 5px 25px 
+    rgba (000, 000, 000, 0.7);
+    transition: 0.2s ease-in-out;
+
+    width: 600px;
+    height: 300px;
+
+
+}
+
+.frame:hover{
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 55px 275px
+    rgba(255, 255, 255, 0.7);
+    transform:scale(1.1);
+    transition-delay: 0.2s;
+    border-radius: 35px;
+
+
+}
+.frame h1 {
+    margin: 0 0 35px;
+    text-transform: uppercase;
+    color: black;
+    text-align: center;
+}
+
+.frame p {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+.main_info {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    color: black;
+    background-color: rgba(180, 180, 180);
+    border-radius: 10px;
+    padding: 1px;
+}
+
+.but1 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 40em;
+    display: flex;
+    justify-content: center;
+    display: flex;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+    border: 1px solid var(--7953-c-3-purple-main, #D77842);
+
+    padding: 12px 64px;
+    border: none;
+    border-radius: 8px;
+    color: beige;
+    background-color: rgba(120, 120, 120);
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    float: right;
+    width: 226px;
+    height: 48px;
+    margin-right: 0px;
+
+    cursor: pointer;
+
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
+    /* ie8 */
+}
+
+figure img {
+    width: 100%;
+    /* Ширина в процентах */
+}
+
+body.background {
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+}
+
+img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    min-width: 50%;
+    min-height: 50%;
+}
+
+
+
