@@ -16,16 +16,17 @@ section {
 
 .frame {
     position: relative;
-    max-width: 600px;
+    /* max-width: 600px; */
     padding: 40px;
-
+    margin-top: 100px;
+    max-margin-right: 150px;
     background: rgba(255, 255, 255, 0.7);
     box-shadow: 0 5px 25px 
     rgba (000, 000, 000, 0.7);
     transition: 0.2s ease-in-out;
 
-    width: 600px;
-    height: 300px;
+    width: 800px;
+    height: 700px;
 
 
 }
@@ -91,6 +92,8 @@ section {
     margin-right: 0px;
 
     cursor: pointer;
+
+    letter-spacing: 2px;
 
 }
 

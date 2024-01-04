@@ -19,8 +19,7 @@ section {
 .frame {
     position: relative;
     max-width: 600px;
-    padding: 40px;
-
+    padding: 10px;
     background: rgba(255, 255, 255, 0.7);
     box-shadow: 0 5px 25px 
     rgba (000, 000, 000, 0.7);

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Decision Support System - Main Page</title>
+  <link rel="icon" href="/src/icons/icon!!.png" type="image/x-icon">
+  <link type="text/css" rel="stylesheet" href="/src/css/style_main_page.css">
+</head>
+
+<body>
+  <section>
+    <div class="frame">
+      <br>
+      <br>
+      <br>
+      <br>
+      <h1>
+        <p>Введите данные о каждом сотруднике</p>
+      </h1>
+
+      <!-- <form action="src\cgi-bin\obrabotka.py" method="post">
+              <p>Введите данные о каждом сотруднике</p>
+              <input type="text" name = "in_name"><br />
+              <input type="text" name = "in_comment"><br />
+              <p><button class="but1" type="submit"><b>Показать результат</b></button></p> 
+            </form> -->
+
+
+
+      <!-- <form action="program.py" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="email">Surname:</label>
+        <input type="text" id="surname" name="surname"><br><br>
+
+        <label for="message">Information:</label><br>
+        <textarea id="info" name="info" rows="4" cols="30"></textarea><br><br>
+
+        <input type="submit" value="Submit">
+      </form> -->
+
+      <!--this script gives mistake "Cannot GET /src/src/cgi-bin/obrabotka.py"-->
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+      <h1>Welcome to Data Calculation Page</h1>
+      <form action="/calculate" method="post">
+        <label for="data">Enter a number: </label>
+        <input type="text" id="data" name="data">
+        <input type="submit" value="Calculate">
+      </form>
+      <div id="result"></div>
+      <script>
+        const form = document.querySelector('form');
+        form.addEventListener('submit', async (event) => {
+          event.preventDefault();
+          const formData = new FormData(form);
+          const response = await fetch('/calculate', {
+            method: 'POST',
+            body: formData
+          });
+          const result = await response.text();
+          document.getElementById('result').innerText = `Result: ${result}`;
+        });
+      </script>
+    </div>
+
+  </section>
+
+
+</body>
+
+<footer>
+
+</footer>
+
+</html>
