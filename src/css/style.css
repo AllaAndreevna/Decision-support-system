@@ -136,7 +136,7 @@ img {
 
 section1 {
     padding: 0 100px;
-    background: url(https://top-fon.com/uploads/posts/2023-02/1675395820_top-fon-com-p-fon-dlya-prezentatsii-minimalizm-serii-1.jpg); */
+    background: url(https://top-fon.com/uploads/posts/2023-02/1675395820_top-fon-com-p-fon-dlya-prezentatsii-minimalizm-serii-1.jpg); 
     background: rgba(120, 120, 120);
     background-size: cover;
     height: 850px;
@@ -145,14 +145,6 @@ section1 {
     align-items: center;
     flex-direction: row-reverse;
 }
-
-
-
-
-
-
-
-
 
 
 

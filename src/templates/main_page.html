@@ -6,7 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>A Decision Support System - Main Page</title>
   <link rel="icon" href="/src/icons/icon!!.png" type="image/x-icon">
-  <link type="text/css" rel="stylesheet" href="/src/css/style_main_page.css">
+  <link rel="stylesheet" type="text/css" href="/src/css/style_main_page.css">
+  <link rel="stylesheet" href="https://pyscript.net/releases/2023.11.1/core.css" />
+  <script type="module" src="https://pyscript.net/releases/2023.11.1/core.js"></script>
 </head>
 
 <body>
@@ -70,10 +72,44 @@
           document.getElementById('result').innerText = `Result: ${result}`;
         });
       </script>
+
     </div>
 
   </section>
+  <pyscript src = "./src/app.py"></pyscript> 
+<!-- 
+  <py-script>
+    print(4567)
+    pip install flask
+    from flask import Flask, request, render_template
 
+    app = Flask(__name__)
+
+    @app.route('/')
+    def index():
+        return render_template('\src\templates\main_page.html')
+
+    @app.route('/calculate', methods=['POST'])
+    def calculate():
+        data = request.form['data']
+        # Perform your calculations with the data
+        result = calculate_result(data)
+        return result
+
+    def calculate_result(data):
+        # Perform your calculations here
+        # For demonstration purposes, let's just double the number
+        try:
+            return str(2 * int(data))
+        except ValueError:
+            return "Invalid input, please enter a number."
+
+    if __name__ == '__main__':
+        app.run()
+
+    # if __name__ == '__main__':
+    # app.run(debug=True)
+  </py-script> -->
 
 </body>
 
