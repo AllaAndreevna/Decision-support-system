@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A Decision Support System</title>
-    <link rel="icon" href="/src/static/icons/icon!!.png" type="image/x-icon">
-    <link type="text/css" rel="stylesheet" href="/src/static/css/style.css">
+    <link rel="icon" href=" {{ url_for ('static', filename='icons/icon!!.png') }}" type="image/x-icon">
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename = 'css/style.css') }}">
 </head>
 
 <body>
@@ -25,7 +25,8 @@
             <br>
             <br>
             <div>
-                <p><button id="myButton" class="but1" type="button" onclick="myFunction();"><b>Начать</b></button></p>
+                <!-- <p><button id="myButton" class="but1" type="button" onclick="myFunction();"><b>Начать</b></button></p> -->
+                <p><button id="myButton" class="but1" type="button" onclick="window.location.href = '/main' ;"><b>Начать</b></button></p>
             </div>
             <br>
 
@@ -35,11 +36,11 @@
 
     </section>
     <!-- <script src=".\src\js\script.js"></script> -->
-    <script>
+    <!-- <script>
         document.getElementById("myButton").addEventListener("click", function () {
             window.location.href = "main_page.html";
         });
-    </script>
+    </script> -->
 </body>
 
 <footer>
