@@ -5,18 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>A Decision Support System - Main Page</title>
+  <link rel="icon" href=" {{ url_for ('static', filename='icons/icon!!.png') }}" type="image/x-icon">
   <link rel="stylesheet" href="{{ url_for('static', filename='css/style_main_page.css') }}">
   <link rel="stylesheet" href="https://pyscript.net/releases/2023.11.1/core.css">
   <script type="module" src="https://pyscript.net/releases/2023.11.1/core.js"></script>
 
-
-  <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-  <!-- <link rel="icon" href="/src/static/icons/icon!!.png" type="image/x-icon">
-  <link rel="stylesheet" type="text/css" href="/src/static/css/style_main_page.css"> 
-  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='./style_main_page.css') }}">
-  <link rel="stylesheet" href="https://pyscript.net/releases/2023.11.1/core.css" />
-  <script type="module" src="https://pyscript.net/releases/2023.11.1/core.js"></script> -->
-  <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 </head>
 
 <body>
@@ -26,46 +19,47 @@
       <br>
       <br>
       <br>
-      <!-- <h1>
-        <p>Введите данные о каждом сотруднике</p>
-      </h1> -->
-
-      <!-- <form action="src\cgi-bin\obrabotka.py" method="post">
-              <p>Введите данные о каждом сотруднике</p>
-              <input type="text" name = "in_name"><br />
-              <input type="text" name = "in_comment"><br />
-              <p><button class="but1" type="submit"><b>Показать результат</b></button></p> 
-            </form> -->
-
-
-
-      <!-- <form action="program.py" method="post">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name"><br><br>
-
-        <label for="email">Surname:</label>
-        <input type="text" id="surname" name="surname"><br><br>
-
-        <label for="message">Information:</label><br>
-        <textarea id="info" name="info" rows="4" cols="30"></textarea><br><br>
-
-        <input type="submit" value="Submit">
-      </form> -->
-
-      <!--this script gives mistake "Cannot GET /src/src/cgi-bin/obrabotka.py"-->
-
       <br>
       <br>
-      <br>
-      <br>
-      <br>
+      
 
       <h1>Welcome to Data Calculation Page</h1>
       <form action="/calculate" method="post">
-        <label for="data">Enter a number: </label>
+
+        <label for="data">How many projects are realised by this programmer?
+          If less than 5, put "0", else put "1": </label>
         <input type="text" id="data" name="data">
+
+        <br>
+
+        <label for="data2">The speed learning and motivation to study is below average - put "0", else - "1": </label>
+        <input type="text" id="data2" name="data2">
+
+        <br>
+
+        <label for="data3">Are all planned tasks completed? Yes - "1", no - "0": </label>
+        <input type="text" id="data3" name="data3">
+
+        <br>
+
+        <label for="data4">Is he/she proactive while working on a project? Yes - "1", no - "0": </label>
+        <input type="text" id="data4" name="data4">
+
+        <br>
+
+        <label for="data5">Was there any conflict in which the coder took part? Yes - "1", no - "0": </label>
+        <input type="text" id="data5" name="data5">
+        
+        <br>
+
+        <label for="data6">SOMETHING MORE ABOUT POOR PROGRAMMER!!!!? Yes -
+          "1", no - "0": </label>
+        <input type="text" id="data6" name="data6">
+        <br>
         <input type="submit" value="Calculate">
       </form>
+
+
       <div id="result"></div>
       <script>
         const form = document.querySelector('form');
@@ -84,8 +78,7 @@
     </div>
 
   </section>
-  <!-- <pyscript src = "./src/app.py"></pyscript>  -->
-<!-- 
+  <!-- 
   <py-script>
     print(4567)
     pip install flask
