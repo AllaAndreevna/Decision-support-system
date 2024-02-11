@@ -21,47 +21,69 @@
       <br>
       <br>
       <br>
-      
+
 
       <h1>Welcome to Data Calculation Page</h1>
       <form action="/calculate" method="post">
 
-        <label for="data">How many projects are realised by this programmer?
+        <label for="data" class="beaut_lett">How many projects are realised by this programmer?
           If less than 5, put "0", else put "1": </label>
-        <input type="text" id="data" name="data">
+        <br>
+        <input type="text" id="data" name="data" class="input_field">
 
         <br>
-
-        <label for="data2">The speed learning and motivation to study is below average - put "0", else - "1": </label>
-        <input type="text" id="data2" name="data2">
-
         <br>
 
-        <label for="data3">Are all planned tasks completed? Yes - "1", no - "0": </label>
-        <input type="text" id="data3" name="data3">
+        <label for="data2" class="beaut_lett">The speed learning and motivation to study is below average - put "0",
+          else - "1": </label>
+        <br>
+        <input type="text" id="data2" name="data2" class="input_field">
 
         <br>
-
-        <label for="data4">Is he/she proactive while working on a project? Yes - "1", no - "0": </label>
-        <input type="text" id="data4" name="data4">
-
         <br>
 
-        <label for="data5">Was there any conflict in which the coder took part? Yes - "1", no - "0": </label>
-        <input type="text" id="data5" name="data5">
-        
+        <label for="data3" class="beaut_lett">Are all planned tasks completed? Yes - "1", no - "0": </label>
+        <br>
+        <input type="text" id="data3" name="data3" class="input_field">
+
+        <br>
         <br>
 
-        <label for="data6">SOMETHING MORE ABOUT POOR PROGRAMMER!!!!? Yes -
+        <label for="data4" class="beaut_lett">Is he/she proactive while working on a project? Yes - "1", no - "0":
+        </label>
+        <br>
+        <input type="text" id="data4" name="data4" class="input_field">
+
+        <br>
+        <br>
+
+        <label for="data5" class="beaut_lett">Was there any conflict in which the coder took part? Yes - "1", no - "0":
+        </label>
+        <br>
+        <input type="text" id="data5" name="data5" class="input_field">
+
+        <br>
+        <br>
+
+        <label for="data6" class="beaut_lett">Does he have a master's degree? Yes -
           "1", no - "0": </label>
-        <input type="text" id="data6" name="data6">
         <br>
-        <input type="submit" value="Calculate">
-      </form>
+        <input type="text" id="data6" name="data6" class="input_field">
+        <br>
 
+        <input type="submit" value="Calculate" class = "but1">
+      </form>
+      <br>
+      
 
       <div id="result"></div>
-      <script>
+
+      <!-- <div class="firework"></div>
+      <div class="firework"></div>
+      <div class="firework"></div> -->
+
+
+      <!-- <script> 
         const form = document.querySelector('form');
         form.addEventListener('submit', async (event) => {
           event.preventDefault();
@@ -71,46 +93,15 @@
             body: formData
           });
           const result = await response.text();
-          document.getElementById('result').innerText = `Result: ${result}`;
+          document.getElementById('result').innerText = `The probability that this person will be given an advance payment (in persents): ${result}`;
         });
-      </script>
+      </script> -->
+      <script type="text/javascript" src="./static/js/script1.js"></script>
 
     </div>
 
   </section>
-  <!-- 
-  <py-script>
-    print(4567)
-    pip install flask
-    from flask import Flask, request, render_template
 
-    app = Flask(__name__)
-
-    @app.route('/')
-    def index():
-        return render_template('\src\templates\main_page.html')
-
-    @app.route('/calculate', methods=['POST'])
-    def calculate():
-        data = request.form['data']
-        # Perform your calculations with the data
-        result = calculate_result(data)
-        return result
-
-    def calculate_result(data):
-        # Perform your calculations here
-        # For demonstration purposes, let's just double the number
-        try:
-            return str(2 * int(data))
-        except ValueError:
-            return "Invalid input, please enter a number."
-
-    if __name__ == '__main__':
-        app.run()
-
-    # if __name__ == '__main__':
-    # app.run(debug=True)
-  </py-script> -->
 
 </body>
 

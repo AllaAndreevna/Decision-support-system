@@ -37,18 +37,19 @@ def calculate_result(data, data2, data3, data4, data5, data6):
         # this is the simplest version of neural network which is called
         # perceptron
         import numpy as np
+        import math
 
         def sigmoid(x):
             return 1 / (1 + np.exp(-x))
 
-        training_inputs = np.array([[1,0,1,0,0,0],
-                                    [1,1,1,1,1,1],
-                                    [1,0,0,1,0,1],
-                                    [0,1,1,0,1,0],
-                                    [1,0,1,0,0,1]])
+        training_inputs = np.array([[1,1,1,0,0,0],
+                                    [1,1,1,1,0,1],
+                                    [0,1,1,1,0,0],
+                                    [1,0,0,0,1,1],
+                                    [1,0,1,0,1,1]])
 
 
-        training_outputs = np.array([[1,1,0,0,0]]).T
+        training_outputs = np.array([[1,1,1,0,0]]).T
 
         np.random.seed(1)
 
@@ -83,7 +84,7 @@ def calculate_result(data, data2, data3, data4, data5, data6):
         #print(output)
 
         #return str(int(data) + int(data2) + int(data3)+ int(data4)+ int(data5)+ int(data6))
-        return str(output)
+        return str(int(output*100))
 
     except ValueError:
         return "Invalid input, please enter a number."
