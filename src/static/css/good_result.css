@@ -1,0 +1,62 @@
+@charset "UTF-8";
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+.main_block {
+    background-color: #fefae0;
+    border-right: 100px solid #283618;
+    border-left: 100px solid #283618;
+
+}
+
+#text {
+    color: #dda15e;
+    font-family: 'Georgia';
+    font-size: 40px;
+    font-weight: bold;
+    justify-content: center;
+    display: flex;
+    /* margin-top: 100px; */
+}
+
+#text1 {
+    color: #dda15e;
+    font-family: 'Georgia';
+    font-size: 50px;
+    font-weight: bold;
+    justify-content: center;
+    display: flex;
+    /* margin-top: 100px; */
+}
+
+#result {
+    color: #606c38;
+    font-family: 'Georgia';
+    font-size: 300px;
+    font-weight: bold;
+    justify-content: center;
+    display: flex;
+
+
+}
+
+.smth_about_person {
+    border: 10px dashed #dda15e;
+    justify-content: center;
+    background-color: #bc6c25;
+    color: #fefae0;
+    font-family: 'Georgia';
+    font-size: 50px;
+    display: flex;
+    width: 85%;
+    border-radius: 70px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#text_about_person {
+    margin: 80px;
+}

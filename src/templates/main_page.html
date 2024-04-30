@@ -7,9 +7,10 @@
   <title>A Decision Support System - Main Page</title>
   <link rel="icon" href=" {{ url_for ('static', filename='icons/icon!!.png') }}" type="image/x-icon">
   <link rel="stylesheet" href="{{ url_for('static', filename='css/style_main_page.css') }}">
+
   <link rel="stylesheet" href="https://pyscript.net/releases/2023.11.1/core.css">
   <script type="module" src="https://pyscript.net/releases/2023.11.1/core.js"></script>
-
+  <!-- <script type="text/javascript" src="./static/js/script1.js"></script> -->
 </head>
 
 <body>
@@ -78,24 +79,6 @@
 
       <div id="result"></div>
 
-      <!-- <div class="firework"></div>
-      <div class="firework"></div>
-      <div class="firework"></div> -->
-
-
-      <!-- <script> 
-        const form = document.querySelector('form');
-        form.addEventListener('submit', async (event) => {
-          event.preventDefault();
-          const formData = new FormData(form);
-          const response = await fetch('/calculate', {
-            method: 'POST',
-            body: formData
-          });
-          const result = await response.text();
-          document.getElementById('result').innerText = `The probability that this person will be given an advance payment (in persents): ${result}`;
-        });
-      </script> -->
       <script type="text/javascript" src="./static/js/script1.js"></script>
 
     </div>

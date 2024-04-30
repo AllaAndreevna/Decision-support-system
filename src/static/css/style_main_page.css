@@ -23,17 +23,18 @@ section {
     /* position: absolute; */
     /* top: 10%;
     left: 35%; */
-    /* max-width: 600px; */
+    max-width: 600px;
     padding: 40px;
-    left: -1000px;
+    left: -35%;
     /* margin-top: 100px; */
-    /* max-margin-right: 150px; */
+    max-margin-right: 150px;
+    max-margin-left: 150px;
     background: rgba(255, 255, 255, 0.7);
     box-shadow: 0 5px 25px rgba (000, 000, 000, 0.7);
     transition: 0.2s ease-in-out;
 
     width: 800px;
-    height: 900px;
+    height: 980px;
 
 }
 
@@ -78,7 +79,6 @@ section {
     justify-content: center;
     display: flex;
     padding: 8px 16px;
-    justify-content: center;
     align-items: center;
     gap: 8px;
     border-radius: 8px;
@@ -154,14 +154,14 @@ img {
     font-weight: bold;
 }
 
-/* body {
+body {
     background:
         linear-gradient(#0007, #0000),
         #123;
     margin: 0;
     height: 100vh;
     overflow: hidden;
-} */
+}
 
 @keyframes firework {
     0% {
@@ -322,4 +322,14 @@ img {
     font-family: 'TimesNewRoman';
     font-size: 20px;
     font-weight: bold;
+}
+
+/* this is for fireworks */
+
+#left {
+    margin-left: 80%;
+}
+
+#right {
+    margin-left: -80%;
 }

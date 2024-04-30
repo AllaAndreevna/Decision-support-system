@@ -1,3 +1,7 @@
+html, body {
+    height: 100%;
+    }
+    
 @charset "UTF-8";
 * {
     margin: 0;
@@ -6,14 +10,24 @@
 
 section {
     padding: 0 100px;
-    /* background: url('/img/3-min.jpg'); */
     background: url('https://spb.bkf.su/wp-content/uploads/2019/02/3-min.jpg');
     background-size: cover;
-    height: 850px;
-    /* width: 1010px;  */
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
+
+
+    background-position: center;
+    height: 100vh;
+    background-size: 100%;
+    flex-direction: row-reverse;
+    display: block;
+    height: 100%;
+    background-repeat: no-repeat;
+
+
+
+   
 }
 
 .frame {
@@ -113,13 +127,13 @@ figure img {
     /* Ширина в процентах */
 }
 
-body.background {
+/* body.background {
     position: fixed;
     top: -50%;
     left: -50%;
     width: 200%;
     height: 200%;
-}
+} */
 
 img {
     position: absolute;
@@ -256,13 +270,13 @@ figure img {
     /* Ширина в процентах */
 }
 
-body.background {
+/* body.background {
     position: fixed;
     top: -50%;
     left: -50%;
     width: 200%;
     height: 200%;
-}
+} */
 
 img {
     position: absolute;
