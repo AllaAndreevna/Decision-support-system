@@ -4,9 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Result 20-40%</title>
+    <link rel="icon" href=" {{ url_for ('static', filename='icons/icon!!.png') }}" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bad_result.css') }}">
 </head>
 <body>
-    <p>here is a bad result page</p>
-    
+    <div class="main_block">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div id="text">
+            Your chance to get a job is:
+        </div>
+        <br>
+        <div id="result"></div>
+        <br>
+        <br>
+        <br>
+        <div id="text1">
+            We believe you can do it better!
+        </div>
+        <br>
+        <br>
+        <div class="smth_about_person">
+            <section id="text_about_person">
+                You have a great chance of getting a job!
+                You have come a long way and the work has paid
+                off with a successful result. Stay in touch,
+                because you will be contacted soon!
+            </section>
+        </div>
+
+        <br>
+        <div class="smth_about_person">
+            <section id="text_about_person">
+                We recommend you to prepare for a meeting with a manager.
+                 Please, prepare your questions about job, conditions of working,
+                 place of work: in the office or at home e t.c.   
+            </section>
+        </div>
+        <br>
+        <div class="smth_about_person">
+            <section id="text_about_person">
+                It will be also useful for you to visit these sites 
+                to refresh your knowleges and prepare for an interview
+                with a manager:
+                <p><a href="https://leetcode.com/">Leetcode</a></p>
+                <p><a href="https://codeforces.com/">Codeforces</a></p>
+                <p><a href ="https://yandex.ru/yaintern/algorithm-training?amp&ysclid=lvmoasoech876634858">Yandex Algorithm-training</a></p>
+            </section>
+        </div>
+
+    </div>
+
+
+    <script>
+        var result = sessionStorage.getItem('result');
+        document.getElementById("result").innerHTML = result + '%';
+    </script>
 </body>
 </html>
