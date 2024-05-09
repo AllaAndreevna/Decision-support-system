@@ -1,8 +1,10 @@
-html, body {
+html,
+body {
     height: 100%;
-    }
-    
+}
+
 @charset "UTF-8";
+
 * {
     margin: 0;
     padding: 0;
@@ -27,7 +29,7 @@ section {
 
 
 
-   
+
 }
 
 .frame {
@@ -35,9 +37,8 @@ section {
     max-width: 600px;
     padding: 10px;
     background: rgba(255, 255, 255, 0.7);
-    box-shadow: 0 5px 25px 
-    rgba (000, 000, 000, 0.7);
-    
+    box-shadow: 0 5px 25px rgba (000, 000, 000, 0.7);
+
 
     width: 600px;
     height: 300px;
@@ -61,16 +62,16 @@ section {
     font-size: 20px;
 }
 
-.frame:hover{
+.frame:hover {
     background: rgba(255, 255, 255, 1);
-    box-shadow: 0 55px 275px
-    rgba(255, 255, 255, 0.7);
-    transform:scale(1.1);
+    box-shadow: 0 55px 275px rgba(255, 255, 255, 0.7);
+    transform: scale(1.1);
     transition-delay: 0.2s;
     border-radius: 35px;
 
 
 }
+
 .main_info {
     margin-left: auto;
     margin-right: auto;
@@ -109,12 +110,14 @@ section {
     height: 48px;
     margin-right: 0px;
 
-    
+
     cursor: pointer;
 }
-button{
+
+button {
     cursor: pointer;
 }
+
 img {
     max-width: 100%;
     height: auto;
@@ -150,7 +153,7 @@ img {
 
 section1 {
     padding: 0 100px;
-    background: url(https://top-fon.com/uploads/posts/2023-02/1675395820_top-fon-com-p-fon-dlya-prezentatsii-minimalizm-serii-1.jpg); 
+    background: url(https://top-fon.com/uploads/posts/2023-02/1675395820_top-fon-com-p-fon-dlya-prezentatsii-minimalizm-serii-1.jpg);
     background: rgba(120, 120, 120);
     background-size: cover;
     height: 850px;
@@ -163,6 +166,7 @@ section1 {
 
 
 @charset "UTF-8";
+
 * {
     margin: 0;
     padding: 0;
@@ -184,8 +188,7 @@ section {
     padding: 40px;
 
     background: rgba(255, 255, 255, 0.7);
-    box-shadow: 0 5px 25px 
-    rgba (000, 000, 000, 0.7);
+    box-shadow: 0 5px 25px rgba (000, 000, 000, 0.7);
     transition: 0.2s ease-in-out;
 
     width: 600px;
@@ -194,16 +197,16 @@ section {
 
 }
 
-.frame:hover{
+.frame:hover {
     background: rgba(255, 255, 255, 1);
-    box-shadow: 0 55px 275px
-    rgba(255, 255, 255, 0.7);
-    transform:scale(1.1);
+    box-shadow: 0 55px 275px rgba(255, 255, 255, 0.7);
+    transform: scale(1.1);
     transition-delay: 0.2s;
     border-radius: 35px;
 
 
 }
+
 .frame h1 {
     margin: 0 0 35px;
     text-transform: uppercase;
@@ -289,5 +292,63 @@ img {
     min-height: 50%;
 }
 
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
 
+.footer {
+    background: #000;
+    padding: 30px 0px;
+    font-family: 'Play', sans-serif;
+    text-align: center;
+}
 
+.footer .row {
+    width: 100%;
+    margin: 1% 0%;
+    padding: 0.6% 0%;
+    color: gray;
+    font-size: 0.8em;
+}
+
+.footer .row a {
+    text-decoration: none;
+    color: gray;
+    transition: 0.5s;
+}
+
+.footer .row a:hover {
+    color: #fff;
+}
+
+.footer .row ul {
+    width: 100%;
+}
+
+.footer .row ul li {
+    display: inline-block;
+    margin: 0px 30px;
+}
+
+.footer .row a i {
+    font-size: 2em;
+    margin: 0% 1%;
+}
+
+@media (max-width:720px) {
+    .footer {
+        text-align: left;
+        padding: 5%;
+    }
+
+    .footer .row ul li {
+        display: block;
+        margin: 10px 0px;
+        text-align: left;
+    }
+
+    .footer .row a i {
+        margin: 0% 3%;
+    }
+}
