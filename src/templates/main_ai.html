@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href=" {{ url_for ('static', filename='icons/icon!!.png') }}" type="image/x-icon">
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename = 'css/main_ai.css') }}">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>HERE WILL ME MY AI</h1>
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+        <label for="pdf-file">Upload a PDF file:</label>
+        <input type="file" id="pdf-file" name="pdf-file" accept="application/pdf">
+        <button type="submit">Upload</button>
+    </form>
+</body>
+
+</html>

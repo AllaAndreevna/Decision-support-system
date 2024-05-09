@@ -44,6 +44,10 @@ def good_result():
 def excellent_result():
     return render_template('excellent_result.html')
 
+@app.route('/main_ai')
+def main_ai():
+    return render_template('main_ai.html')
+
 
 if __name__ == '__main__':
     http_server = WSGIServer(('', 5000), app)
