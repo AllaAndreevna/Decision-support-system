@@ -8,3 +8,7 @@
 5) Print ```python app.py``` and press *enter*
 6) Put ```http://localhost:5000/``` to your browser searching field
 7) See the result
+
+
+## ATTENTION!
+Before running this program you shoul download this [folder](https://drive.google.com/drive/folders/1ynVComWUKZTt4x7k7muMm6RzkdlzGTqK?usp=sharing) and add it to src.
