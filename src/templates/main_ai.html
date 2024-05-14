@@ -6,16 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href=" {{ url_for ('static', filename='icons/icon!!.png') }}" type="image/x-icon">
     <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename = 'css/main_ai.css') }}">
-    <title>Document</title>
+    <title>AI Magic</title>
+
+
 </head>
 
 <body>
-    <h1>HERE WILL ME MY AI</h1>
-    <form action="upload.php" method="post" enctype="multipart/form-data">
+
+    <form action="/get_pdf" method="post" enctype="multipart/form-data" id="pdf-form">
         <label for="pdf-file">Upload a PDF file:</label>
         <input type="file" id="pdf-file" name="pdf-file" accept="application/pdf">
         <button type="submit">Upload</button>
     </form>
+
+    <div id="pdf-output">{{ text }}</div>
+
+
+    <button type="submit" id=" analyze-button">Analyze Text</button>
+    <div id="analysis-result">{{ result }}</div>
+
+
 </body>
 
 </html>

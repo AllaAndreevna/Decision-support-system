@@ -1,8 +1,15 @@
 from flask import Flask, request, render_template
+# from flask_session import Session
 from gevent.pywsgi import WSGIServer
 from calculate_result import calculate_result
+from PyPDF2 import PdfReader
+from analyze_text_internal import analyze_text_internal
 
 app = Flask(__name__)
+
+# create a session for storing text of resume 
+# app.config['SESSION_TYPE'] = 'filesystem'
+# Session(app)
 
 @app.route('/')
 def index():
@@ -46,6 +53,19 @@ def excellent_result():
 
 @app.route('/main_ai')
 def main_ai():
+    return render_template('main_ai.html')
+
+@app.route('/get_pdf', methods=['GET', 'POST'])
+def get_pdf():
+    if request.method == 'POST':
+        file = request.files['pdf-file']
+        pdf = PdfReader(file)
+        text = ''
+        for page in pdf.pages:
+            text += page.extract_text()
+        result = analyze_text_internal(text)
+        return render_template('main_ai.html', result=result)
+        # session['pdf_text'] = text
     return render_template('main_ai.html')
 
 

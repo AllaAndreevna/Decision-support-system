@@ -27,11 +27,13 @@ form.addEventListener('submit', async (event) => {
     sessionStorage.setItem('result', result);
     window.location.href = '/good_result';
   }
-  else {
+  else if (result > 80 && result <= 100){
    // document.getElementById('result').innerText = `The probability that this person will be given an advance payment (as a percentage): ${result}`;
-
    sessionStorage.setItem('result', result);
    window.location.href = '/excellent_result';
   }
-  
+  else {
+    alert ("Invalid input, try again.");
+  }
 });
+
