@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\chern\OneDrive\Рабочий стол\Курсовая СППР web\.venv"
+VIRTUAL_ENV="c:\Users\chern\KURSOVAYA\Decision-support-system\.venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

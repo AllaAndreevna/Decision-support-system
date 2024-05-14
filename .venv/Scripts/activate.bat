@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=C:\Users\chern\OneDrive\Рабочий стол\Курсовая СППР web\.venv
+set VIRTUAL_ENV=c:\Users\chern\KURSOVAYA\Decision-support-system\.venv
 
 if not defined PROMPT set PROMPT=$P$G
 
