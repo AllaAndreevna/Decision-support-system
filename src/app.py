@@ -55,6 +55,7 @@ def excellent_result():
 def main_ai():
     return render_template('main_ai.html')
 
+<<<<<<< HEAD
 @app.route('/get_pdf', methods=['GET', 'POST'])
 def get_pdf():
     if request.method == 'POST':
@@ -68,6 +69,8 @@ def get_pdf():
         # session['pdf_text'] = text
     return render_template('main_ai.html')
 
+=======
+>>>>>>> 07b3fc0225dfa420c754e84df9aa64889fb64fb4
 
 if __name__ == '__main__':
     http_server = WSGIServer(('', 5000), app)
