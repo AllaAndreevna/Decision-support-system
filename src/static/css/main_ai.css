@@ -1,19 +1,117 @@
 form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 50px;
-  }
-  
-  label {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
-  input[type="file"] {
-    border: 2px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    font-size: 18px;
-    margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+label {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: 'Georgia';
+}
+
+input[type="file"] {
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-family: 'Georgia';
+}
+
+#pdf-output {
+  background-color: beige;
+  border-radius: 10px;
+  padding: 1%;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Georgia';
+  margin-top: 10px;
+}
+
+.label {
+  position: relative;
+  padding: 2%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  font-family: 'Georgia';
+}
+
+#analysis-result {
+  font-family: 'Georgia';
+  font-size: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+
+
+.footer {
+
+  background: rgb(205, 205, 147);
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* margin-top: 100px; */
+}
+
+.social-icon,
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.social-icon__item,
+.menu__item {
+  list-style: none;
+}
+
+.social-icon__link {
+  font-size: 2rem;
+  /* color: black; */
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+.social-icon__link:hover {
+  transform: translateY(-10px);
+}
+
+.menu__link {
+  font-size: 1.2rem;
+  color: #fff;
+  /* color: black; */
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 300;
+}
+
+.menu__link:hover {
+  opacity: 1;
+}
+
+.footer p {
+  color: #fff;
+  /* color: black; */
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
+}

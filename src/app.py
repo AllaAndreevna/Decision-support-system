@@ -55,7 +55,6 @@ def excellent_result():
 def main_ai():
     return render_template('main_ai.html')
 
-<<<<<<< HEAD
 @app.route('/get_pdf', methods=['GET', 'POST'])
 def get_pdf():
     if request.method == 'POST':
@@ -65,12 +64,16 @@ def get_pdf():
         for page in pdf.pages:
             text += page.extract_text()
         result = analyze_text_internal(text)
-        return render_template('main_ai.html', result=result)
-        # session['pdf_text'] = text
+        result = int(result * 100)
+        return render_template('main_ai.html', text=text, result=result)
     return render_template('main_ai.html')
 
-=======
->>>>>>> 07b3fc0225dfa420c754e84df9aa64889fb64fb4
+
+    #     # Measure the load time
+    #     start_time = time.time()
+
+    #     return render_template('main_ai.html', text=text,  result=result, load_time=start_time)
+    # return render_template('main_ai.html')
 
 if __name__ == '__main__':
     http_server = WSGIServer(('', 5000), app)
