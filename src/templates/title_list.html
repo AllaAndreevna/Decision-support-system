@@ -4,38 +4,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Decision Support System</title>
-    <link rel="icon" href=" {{ url_for ('static', filename='icons/icon!!.png') }}" type="image/x-icon">
-    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename = 'css/style.css') }}">
+    <title>СППР - Главная</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
 </head>
 
 <body>
-    <section>
-        <div class="frame">
-            <br>
-            <br>
-            <h1>
-                <p>Система поддержки принятия решений</p>
-                <p>На основе нейронной сети</p>
-            </h1>
+    <div class="header">
 
-
-            <br>
-            <br>
-            <br>
-            <br>
-            <div>
-                <!-- <p><button id="myButton" class="but1" type="button" onclick="myFunction();"><b>Начать</b></button></p> -->
-                <p><button id="myButton" class="but1" type="button" onclick="window.location.href = '/main' ;"><b>Начать</b></button></p>
-                <p><button id="myButton" class="but1" type="button" onclick="window.location.href = '/main_ai' ;"><b>Start with a new technology!</b></button></p>
+        <div class="block1">
+            <div class="block0">
+                <img src=".\static\img\logo_for_site..jpg" alt="logo">
             </div>
-            <br>
-
-
+            СППР
         </div>
 
+        <div class="block2">
+            <ul class="menu">
+                <li class="menu__item"><a class="menu__link" href='/'>Главная</a></li>
+                <li class="menu__item"><a class="menu__link" href="/about_project">О проекте</a></li>
+                <!-- <li class="menu__item"><a class="menu__link" href="#">Services</a></li> -->
+                <!-- <li class="menu__item"><a class="menu__link" href="#">Team</a></li> -->
+                <li class="menu__item"><a class="menu__link" href="#">Связаться</a></li>
 
-    </section>
+            </ul>
+        </div>
+    </div>
+    <div class="frame">
+        <br>
+        <br>
+        <h1>
+            <p>Система поддержки принятия решений</p>
+            <p>на основе искуственного интеллекта</p>
+        </h1>
+
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <div>
+            <!-- <p><button id="myButton" class="but1" type="button" onclick="myFunction();"><b>Р В Р’В Р РЋРЎС™Р В Р’В Р вЂ™Р’В°Р В Р Р‹Р Р†Р вЂљР Р‹Р В Р’В Р вЂ™Р’В°Р В Р Р‹Р Р†Р вЂљРЎв„ўР В Р Р‹Р В Р вЂ°</b></button></p> -->
+            <p><button id="myButton" class="but1" type="button"
+                    onclick="window.location.href = '/main' ;"><b>Начать</b></button></p>
+            <p><button id="myButton" class="but1" type="button" onclick="window.location.href = '/main_ai' ;"><b>Новая технология</b></button></p>
+            <p><button id="myButton" class="but1" type="button"
+                onclick="window.location.href = '/analyze' ;"><b>ФИЧА</b></button></p>
+        </div>
+        <br>
+
+
+    </div>
+
     <!-- <script src=".\src\js\script.js"></script> -->
     <!-- <script>
         document.getElementById("myButton").addEventListener("click", function () {

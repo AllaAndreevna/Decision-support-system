@@ -1,30 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>СППР - Анализ</title>
     <link rel="icon" href=" {{ url_for ('static', filename='icons/icon!!.png') }}" type="image/x-icon">
     <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename = 'css/main_ai.css') }}">
-    <title>AI Magic</title>
+
 
 
 </head>
 
 <body>
 
+    <div class="plane"></div>
     <form action="/get_pdf" method="post" enctype="multipart/form-data" id="pdf-form">
-        <label for="pdf-file">Upload a PDF file:</label>
+        <label for="pdf-file">Форма для загрузки Вашего резюме:</label>
         <input type="file" id="pdf-file" name="pdf-file" accept="application/pdf">
-        <button type="submit">Upload</button>
+        <button type="submit">Загрузить</button>
     </form>
     <br>
     <br>
-    <div class="label">Your resume is displayed here. Please, check if it is filled correctly. </div>
+    <div class="label">Ниже отобразится загруженное Вами резюме. Пожалуйста, проверьте, все ли правильно загрузилось.</div>
 
     <div id="pdf-output">{{ text }}</div>
 
-    <div class="label">Your result to get a job (in persents) is
+    <div class="label">Здесь отобразится результат оценки Вашего резюме:
         <div id="analysis-result">{{ result }}</div>
     </div>
 
@@ -41,14 +44,14 @@
             </a></li>
     </ul>
     <ul class="menu">
-        <li class="menu__item"><a class="menu__link" href='/'>Home</a></li>
-        <li class="menu__item"><a class="menu__link" href="#">About</a></li>
-        <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
-        <li class="menu__item"><a class="menu__link" href="#">Team</a></li>
-        <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+        <li class="menu__item"><a class="menu__link" href='/'>Главная</a></li>
+        <li class="menu__item"><a class="menu__link" href='/about_project'>О проекте</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">Команда</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">Партнеры</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">Связаться</a></li>
 
     </ul>
-    <p>&copy;2024 Alla Chernova | All Rights Reserved</p>
+    <p>&copy;2024 Алла Чернова | Все права защищены</p>
 </footer>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

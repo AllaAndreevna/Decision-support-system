@@ -1,15 +1,25 @@
-from flask import Flask, request, render_template
+from flask import Flask, request, render_template,  jsonify
 # from flask_session import Session
 from gevent.pywsgi import WSGIServer
 from calculate_result import calculate_result
 from PyPDF2 import PdfReader
 from analyze_text_internal import analyze_text_internal
+import requests
 
 app = Flask(__name__)
 
+# app.config (Flask)
+# app.config['LANGUAGES'] = ['ru']
+# app.config['BABEL_DEFAULT_LOCALE'] = 'ru'
+
+# print(app.config)
 # create a session for storing text of resume 
 # app.config['SESSION_TYPE'] = 'filesystem'
 # Session(app)
+
+
+
+
 
 @app.route('/')
 def index():
@@ -55,6 +65,10 @@ def excellent_result():
 def main_ai():
     return render_template('main_ai.html')
 
+@app.route('/about_project')
+def about_project():
+    return render_template('about_project.html')
+
 @app.route('/get_pdf', methods=['GET', 'POST'])
 def get_pdf():
     if request.method == 'POST':
@@ -69,11 +83,6 @@ def get_pdf():
     return render_template('main_ai.html')
 
 
-    #     # Measure the load time
-    #     start_time = time.time()
-
-    #     return render_template('main_ai.html', text=text,  result=result, load_time=start_time)
-    # return render_template('main_ai.html')
 
 if __name__ == '__main__':
     http_server = WSGIServer(('', 5000), app)

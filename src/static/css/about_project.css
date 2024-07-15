@@ -1,0 +1,150 @@
+body {
+    font-family: 'PT Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+.hero {
+    background-image: linear-gradient(to bottom, #f7f7f7, #e7e7e7);
+    padding: 100px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.content {
+    padding: 20px;
+}
+
+.content h2 {
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+    color: #666;
+}
+
+.relevance {
+    padding: 5%;
+}
+
+.quote {
+    padding-left: 50px;
+    border-left: 4px solid #e2e2e2;
+    font-family: 'Georgia', 'Times New Roman', serif;
+}
+
+.quote p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 28px;
+    color: #333333;
+}
+
+.quote cite {
+    font-style: italic;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 28px;
+    color: #aaaaaa;
+}
+
+.info-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* two columns, equal width */
+    margin-left: 10%;
+    gap: 20px;
+}
+
+.main-info,
+.short-desc {
+    grid-column: 1;
+    margin-left: 5%;
+}
+
+@media (max-width: 2560px) {
+    .info-container {
+        grid-template-columns: 1fr;
+    }
+
+    .main-info,
+    .short-desc {
+        grid-column: 1;
+    }
+}
+
+/* #quote {
+    padding: 10%;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+} */
+
+.works_adv {
+    background-color: #f7f7f7;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+.menu__item {
+    list-style: none;
+}
+
+.menu__link {
+    font-size: 1.2rem;
+    color: #00261b;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+    font-weight: 300;
+}
+
+.menu__link:hover {
+    opacity: 1;
+}
