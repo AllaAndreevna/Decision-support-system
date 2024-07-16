@@ -7,43 +7,59 @@
     <title>СППР - О проекте</title>
     <link rel="icon" href="{{ url_for('static', filename='icons/icon!!.png') }}" type="image/x-icon">
     <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/about_project.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </head>
 
 <body>
-    <!-- Header section -->
     <header>
         <ul class="menu">
-            <li class="menu__item"><a class="menu__link" href='/'>Главная</a></li>
-            <li class="menu__item"><a class="menu__link" href='/about_project'>О проекте</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">Команда</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">Партнеры</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">Связаться</a></li>
+            <li class="menu__item1"><a class="menu__link1" href='/'>Главная</a></li>
+            <li class="menu__item1"><a class="menu__link1" href='/about_project'>О проекте</a></li>
+            <li class="menu__item1"><a class="menu__link1" href="/team">Команда</a></li>
+            <li class="menu__item1"><a class="menu__link1" href="#">Партнеры</a></li>
+            <li class="menu__item1"><a class="menu__link1" href="#">Связаться</a></li>
 
         </ul>
-       
+
     </header>
 
-    <!-- Hero section -->
     <section class="hero">
         <h1>СППР - О проекте</h1>
         <p>Добро пожаловать на страницу проекта!</p>
-        <!-- <img src="{{ url_for('static', filename='img/IMG_2654.JPG') }}" alt="Project Image">  -->
     </section>
 
-    <!-- Main content section -->
     <section>
-        <div class="info-container">
-            <div class="main-info">
-                <h2>Основная информация об IT проекте</h2>
-                <p>Проект представляет собой цифровой продукт, поэтому будет распространен по всей
-                    территории Российской Федерации.
-                    Масштаб проекта – Всероссийский, поскольку пользователи будут использовать его
-                    продукт (а именно разработанное ПО) по сети Интернет.
-                    По всей России существуют большие компании. В случае компаний с филиалами по
-                    России сотрудники из разных городов будут пользоваться единым сервисом,
-                    принятым корпоративным центром.
-                </p>
+        <div class="info-container animate__animated animate__fadeInUp wow main-info">
+            <h2>Основная информация об IT проекте</h2>
+            <div class="target">
+                <h3>Цель проекта</h3>
+                <p>Упростить процесс обработки многочисленных заявок на вакансию в
+                    большой компании согласно заранее известным критериям отбора.</p>
             </div>
+            <h3>Задача Системы принятия решений на основе ИИ</h3>
+            Проанализировать заявки тех, кто хочет попасть в компанию, на основе критериев
+            сформировать массив значений. Далее, опираясь на полученный массив, будет выдан
+            наиболее подходящий ответ на вопрос, что делать с конкретным кандидатом.</p>
+            <h3>Общая задача проекта</h3>
+            <p>Популяризировать работу в крупных IT-компаниях
+                (и не только), облегчить работу HR-специалистов, предоставить компаниям
+                инструмент, способный повысить её эффективность, и улучшить качество
+                принимаемых работников. </p>
+            <h3>Масштаб проекта</h3>
+            <p>
+                Проект представляет собой цифровой продукт, поэтому будет распространен по всей территории
+                Российской Федерации. Поскольку пользователи будут использовать его продукт (а именно разработанное
+                ПО) по сети Интернет, масштаб проекта является Всероссийским. В случае компаний с филиалами по
+                России сотрудники из разных городов будут пользоваться единым сервисом, принятым корпоративным
+                центром.
+            </p>
+        </div>
+        </p>
+        </div>
         </div>
         <div class="short-desc">
             <h2>Краткое описание проекта</h2>
@@ -64,7 +80,8 @@
                     принятие решения о выборе кандидата. </li>
                 <br>
                 <br>
-                <p class='works_adv'>Суть работы итогового ПО заключается в том, что программа получает на вход текст –
+                <p class='works_adv wow animate__animated animate__pulse'>Суть работы итогового ПО заключается в том,
+                    что программа получает на вход текст –
                     заявку кандидата на вакансию. После этого она анализирует написанное при помощи
                     ИИ. Алгоритм выделяет ключевые слова, на основе которых формируется оценка
                     претендента и ответ на вопрос – пройдет ли он.</p>
@@ -80,7 +97,7 @@
             По
             данным «РБК
             Компании»</a>
-        <blockquote class='quote'>
+        <blockquote class='quote wow animate__animated animate__fadeInRight'>
             <p>Из-за ручного учета заявок около 20% всех
                 обращений вообще теряется. Это неизбежно
                 приводит к скандалам внутри организации (если
@@ -94,19 +111,104 @@
             в России hh.ru</a>
         в настоящее время
         автоматизация бизнес-процессов – это настоящий тренд.
-        <blockquote class='quote'>
+        <blockquote class='quote wow animate__animated animate__fadeInLeft'>
             <p>В вопросе автоматизации важно
                 не только ЧТО автоматизировать, но и КАК,
                 тогда и эффективность организации в целом
                 вырастет, и скорость принятия решений
                 на основе данных увеличится.</p>
         </blockquote>
+        Кроме того, недавно в Москве прошёл ежегодный саммит HR Digital, на котором
+        Дмитрий Сергиенков – генеральный директор HeadHunter подчеркнул:
+        <blockquote class='quote wow animate__animated animate__fadeInRight'>
+            <p>Компании, не использующие прорывные разработки, в любом
+                случае проигрывают игрокам, которые делают ставку на них как
+                на вспомогательный инструмент. Доверяя часть задач, например
+                операционных, нейросети HR-эксперт сокращает рутинную
+                работу, а благодаря внедрению больших данных и аналитики, его
+                функция становится куда более стратегической.
+            </p>
+        </blockquote>
     </section>
+    <section class="hero">
+        <h1>Актуальность проекта</h1>
+    </section>
+    <div class="short-desc">
+        <div class="actuality wow animate__animated animate__pulse">
+            <p>Актуальность проекта очень велика, поскольку состав команды в компании – это
+                ключевой аспект успешного результата. Система поддержки принятия решений на
+                основе ИИ поможет HR-сотрудникам (и отделу кадров):</p>
+        </div>
+        <br>
+        <div class="adv_cont">
+            <div class="works_image wow animate__animated animate__flip">
+                <img src="./static/img/clock.png" alt="Описание картинки">
+            </div>
+            <div class="works_adv">
+                быстрее проанализировать большой массив данных, выбрать наилучших
+                кандидатов согласно заранее известным критериям.</div>
+        </div>
+        <br>
+        <div class="adv_cont">
+            <div class="works_image wow animate__animated animate__flip">
+                <img src="./static/img/smile.png" alt="Описание картинки">
+            </div>
+            <div class="works_adv">повысить удовлетворенность работой и снизить текучесть кадров.
+            </div>
+        </div>
+        <br>
+        <div class="adv_cont">
+            <div class="works_image wow animate__animated animate__flip">
+                <img src="./static/img/ruble.png" alt="Описание картинки">
+            </div>
+            <div class="works_adv">доступно по цене: Разрабатываемое решение доступно для большинства
+                населения, оно просто в использовании.</div>
+        </div>
+        <br>
 
-    <!-- Footer section -->
-    <footer>
-        <p>&copy; 2024 СППР</p>
+        <div class="adv_cont">
+            <div class="works_image wow animate__animated animate__flip">
+                <img src="./static/img/worker.png" alt="Описание картинки">
+            </div>
+            <div class="works_adv">предоставление возможностей для удаленной работы: Система может помочь
+                компаниям оценивать кандидатов на удаленные должности, что может
+                расширить возможности для людей, которые живут в отдаленных районах или
+                имеют проблемы с мобильностью.</div>
+        </div>
+        <br>
+        <div class="adv_cont">
+            <div class="works_image wow animate__animated animate__flip">
+                <img src="./static/img/hands.png" alt="Описание картинки">
+            </div>
+            <div class="works_adv">содействие прозрачности: Предоставляя четкую и объективную обратную связь
+                кандидатам, система может способствовать прозрачности процесса найма. Это
+                может помочь укрепить доверие между компаниями и соискателями работы и
+                улучшить общий опыт найма.</div>
+        </div>
+        <br>
+    </div>
+
+    <footer class="footer">
+        <ul class="social-icon">
+            <li class="social-icon__item"><a class="social-icon__link" href="https://vk.com/club225244210">
+                    <ion-icon name="logo-vk"></ion-icon>
+                </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="https://t.me/decision_support_system">
+                    <img src="./static/icons/icons-telegram.svg" alt="Telegram">
+                </a></li>
+        </ul>
+        <ul class="menu">
+            <li class="menu__item"><a class="menu__link" href='/'>Главная</a></li>
+            <li class="menu__item"><a class="menu__link" href='/about_project'>О проекте</a></li>
+            <li class="menu__item"><a class="menu__link" href="/team">Команда</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Партнеры</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Связаться</a></li>
+        </ul>
+        <p>&copy;2024 Алла Чернова | Все права защищены</p>
     </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
 
 </html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Команда</title>
+    <link rel="icon" href=" {{ url_for ('static', filename='icons/icon!!.png') }}" type="image/x-icon">
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename = 'css/team.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</head>
+
+<body>
+    <header>
+        <ul class="menu">
+            <li class="menu__item1"><a class="menu__link1" href='/'>Главная</a></li>
+            <li class="menu__item1"><a class="menu__link1" href='/about_project'>О проекте</a></li>
+            <li class="menu__item1"><a class="menu__link1" href="/team">Команда</a></li>
+            <li class="menu__item1"><a class="menu__link1" href="#">Партнеры</a></li>
+            <li class="menu__item1"><a class="menu__link1" href="/contact">Связаться</a></li>
+        </ul>
+    </header>
+
+    <section class="hero">
+        <h1>Наша команда</h1>
+        <p>Состав разработчиков и помощников в развитии проекта</p>
+    </section>
+    <div class="person-container wow animate__animated animate__fadeIn">
+        <div class="person-photo">
+            <img src="./static/img/photo_Alla.jpg" alt="Описание картинки">
+        </div>
+        <div class="person-info">
+            <h1>Алла Чернова</h1>
+            <h2>Лидер</h2>
+            <h3>Функционал в проекте:</h3>
+            <p>
+                Организация
+                участников
+                команды и
+                ключевых
+                процессов</p>
+            <p>
+                Разработчик
+            </p>
+            <p>
+                Планирование
+                проекта
+            </p>
+            <p>
+                Коммуникация
+                с партнёрами
+            </p>
+            <p>
+                Проведение
+                опросов
+                представителе
+                й ЦА после
+                использования
+                продукта
+            </p>
+            <p>
+                SMM (ведение
+                социальных
+                сетей)
+            </p>
+        </div>
+    </div>
+
+    <div class="person-container wow animate__animated animate__fadeIn">
+        <div class="person-photo">
+            <img src="./static/img/photo_Sophia.jpg" alt="Описание картинки">
+        </div>
+        <div class="person-info">
+            <h1>Софья Никитина</h1>
+            <h2>Участник</h2>
+            <h3>Функционал в проекте:</h3>
+            <p>
+                Подбор
+                материала для
+                социальных
+                сетей
+            </p>
+            <p>
+                Помощь в
+                составлении
+                контент-плана
+            </p>
+            <p>
+                Проведение
+                опросов
+                представителе
+                й ЦА после
+                использования
+                продукта
+            </p>
+            <p>
+                SMM-специалист
+            </p>
+            <p>
+                Создатель
+                видео-контента
+                для соц. сетей
+            </p>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <ul class="social-icon">
+            <li class="social-icon__item"><a class="social-icon__link" href="https://vk.com/club225244210">
+                    <ion-icon name="logo-vk"></ion-icon>
+                </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="https://t.me/decision_support_system">
+                    <img src="./static/icons/icons-telegram.svg" alt="Telegram">
+                </a></li>
+        </ul>
+        <ul class="menu">
+            <li class="menu__item"><a class="menu__link" href='/'>Главная</a></li>
+            <li class="menu__item"><a class="menu__link" href='/about_project'>О проекте</a></li>
+            <li class="menu__item"><a class="menu__link" href="/team">Команда</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Партнеры</a></li>
+            <li class="menu__item"><a class="menu__link" href="/contact">Связаться</a></li>
+        </ul>
+        <p>&copy;2024 Алла Чернова | Все права защищены</p>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

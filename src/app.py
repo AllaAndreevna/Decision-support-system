@@ -69,6 +69,14 @@ def main_ai():
 def about_project():
     return render_template('about_project.html')
 
+@app.route('/team')
+def team():
+    return render_template('team.html')
+
+@app.route('/contact')
+def contact():
+    return render_template('contact.html')
+
 @app.route('/get_pdf', methods=['GET', 'POST'])
 def get_pdf():
     if request.method == 'POST':
