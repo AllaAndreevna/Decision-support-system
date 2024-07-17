@@ -4,3 +4,4 @@ flask_session/
 *.pt
 ../venv/
 .venv/
+venv/
