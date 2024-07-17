@@ -80,6 +80,7 @@ button[type="submit"]:hover {
   margin-left: auto;
   margin-right: auto;
   border-radius: 20px;
+  font-size: 25px;
   /* font-family: 'Georgia'; */
 }
 
@@ -180,7 +181,7 @@ button[type="submit"]:hover {
 
   /* Adjust the label and input field sizes for mobile devices */
   label {
-    font-size: 18px;
+    font-size: 25px;
     margin-bottom: 10px;
   }
 
@@ -220,4 +221,116 @@ button[type="submit"]:hover {
   #analysis-result {
     margin-left: 42%;
   }
+}
+
+.rules {
+  font-size: 25px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border: 4px solid #00261b;
+  width: 80%;
+}
+
+.rules p {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.rules ol {
+  list-style: decimal;
+  padding: 0 20px;
+}
+
+.rules li {
+  margin-bottom: 10px;
+}
+
+.rules li p {
+  font-size: 25px;
+  margin-bottom: 0;
+}
+
+.example {
+  margin-top: 5%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #00261b;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-size: 20px;
+  line-height: 1.5;
+  position: relative;
+  width: 70%;
+}
+
+.example p {
+  margin-bottom: 20px;
+}
+
+.example p:last-child {
+  font-size: 14px;
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+.hero {
+  background-image: linear-gradient(to bottom, #f7f7f7, #00261b57);
+  padding: 100px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.pdf-label {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #FF0000;
+  /* red color */
+  text-transform: uppercase;
+}
+
+.attention {
+  background-color: #00261b57;
+  border-radius: 10px;
+  border: 1px solid #00261b;
+  padding: 3%;
+}
+
+.attention.wow.animate__animated.animate__pulse {
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+}
+
+.arrow-down {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.arrow-down::before {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: red transparent transparent transparent;
+  margin: 0 5px;
+}
+
+.arrow-down i {
+  font-size: 48px;
+  transform: scale(2);
+  /* scale up the arrow icon by 2x */
+  margin: 0 5px;
 }

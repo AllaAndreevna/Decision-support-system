@@ -8,14 +8,79 @@
     <title>СППР - Анализ</title>
     <link rel="icon" href=" {{ url_for ('static', filename='icons/icon!!.png') }}" type="image/x-icon">
     <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename = 'css/main_ai.css') }}">
-
-
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    
+    <script>
+        new WOW().init();
+    </script>
 </head>
 
 <body>
-
     <div class="plane"></div>
+
+    <section class="hero">
+        <h1>Добро пожаловать на страницу анализа Вашего резюме!</h1>
+    </section>
+    <div class="rules">
+        <p class="attention wow animate__animated animate__pulse">Обратите внимание, что резюме важно составить согласно
+            структуре, описанной ниже. Иначе, мы не
+            сможем
+            корректно
+            оценить Вашу заявку.</p>
+        <p>Необходимо ответить на следующие 5 вопросов. Каждый ответ должен занимать по 3-4 предложения.
+            Каждый ответ должен быть выделен в отдельный абзац.</p>
+        <ol>
+            <li>
+                <p>Опыт работы, сколько проектов было выполнено и каких</p>
+            </li>
+            <li>
+                <p>Скорость обучения новому, способность к адаптации к новым условиям, замотивированность к работе
+                </p>
+            </li>
+            <li>
+                <p>Характер, конфликтность</p>
+            </li>
+            <li>
+                <p>Олимпиады</p>
+            </li>
+            <li>
+                <p>Образование. Есть ли степень бакалавра, магистра</p>
+            </li>
+        </ol>
+    </div>
+    <div class="arrow-down">
+        <i class="fas fa-arrow-down" style="color: #34C759;"></i>
+        <!-- or multiple arrows -->
+        <!--<i class="fas fa-arrow-down" style="color: #34C759;"></i>
+        <i class="fas fa-arrow-down" style="color: #34C759;"></i>
+        <i class="fas fa-arrow-down" style="color: #34C759;"></i>-->
+    </div>
+    <div class="example wow animate__animated animate__fadeInLeft">
+        <p>Резюме на вакансию стажёр-разработчик.</p>
+        <p>Здравствуйте, меня зовут Алла Чернова, меня заинтересовала ваша вакансия, потому что ранее мне приходилось
+            работать на похожими задачами. Мой опыт разработки составляют шесть проектов: распознавание текста, обучение
+            сетей, создание приложения, написание веб-сайта, создание обучающей игры и тестирование продукта. Так же
+            немного
+            занималась деплоем, но пока не очень хорошо с этим работаю.</p>
+        <p>Я очень замотивированный студент, желающий узнать
+            как можно больше! Моя скорость обучения также очень высока, поскольку я люблю работать. Все поставленные
+            задачи
+            я выполняю вовремя, соблюдаю дедлайны. В течение работы над проектом я могу предложить новые идеи, но не
+            всегда,
+            поскольку могу не разбираться хорошо. </p>
+        <p>В школьные годы принимала участие в олимпиадах разного уровня по техническим специальностям. Стала призером
+            олимпиады второго уровня по информатике в 10 классе, финалистом командного соревнования по биоинформатике,
+            победитель конкурса Большая Перемена в 2021 году.</p>
+        <p>По характеру я совсем не конфликтный человек. В предыдущих проектах не
+            было ссор, связанных со мной.</p>
+        <p>На данный момент обучаюсь на бакалавриате, магистерской степени не имею.</p>
+        <br>
+
+        <p>С уважением,</p>
+        <p>Алла Чернова</p>
+        <div class="pdf-label">PDF Format</div>
+    </div>
     <form action="/get_pdf" method="post" enctype="multipart/form-data" id="pdf-form">
         <label for="pdf-file">Форма для загрузки Вашего резюме:</label>
         <input type="file" id="pdf-file" name="pdf-file" accept="application/pdf">
@@ -23,7 +88,8 @@
     </form>
     <br>
     <br>
-    <div class="label">Ниже отобразится загруженное Вами резюме. Пожалуйста, проверьте, все ли правильно загрузилось.</div>
+    <div class="label">Ниже отобразится загруженное Вами резюме. Пожалуйста, проверьте, все ли правильно загрузилось.
+    </div>
 
     <div id="pdf-output">{{ text }}</div>
 
@@ -47,8 +113,8 @@
         <li class="menu__item"><a class="menu__link" href='/'>Главная</a></li>
         <li class="menu__item"><a class="menu__link" href='/about_project'>О проекте</a></li>
         <li class="menu__item"><a class="menu__link" href="/team">Команда</a></li>
-        <li class="menu__item"><a class="menu__link" href="#">Партнеры</a></li>
-        <li class="menu__item"><a class="menu__link" href="#">Связаться</a></li>
+        <!-- <li class="menu__item"><a class="menu__link" href="#">Партнеры</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">Связаться</a></li> -->
 
     </ul>
     <p>&copy;2024 Алла Чернова | Все права защищены</p>
