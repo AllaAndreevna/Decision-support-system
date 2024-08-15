@@ -92,23 +92,26 @@ def index():
     return render_template('title_list.html')
 
 
-@app.route('/recomendations', methods=['GET'])
-def recomendations():
-    result = int(request.args.get('result')) 
-    if not result:
-        return render_template('errorpage.html', num1 = 5, num2 = 0, num3 = 0, message="Нельзя посмотреть рекомендации, не загрузив резюме. Или другая ошибка"), 500
-    if 80 <= result and result <= 100:
-        return render_template('excellent_result.html', result=result)
-    elif 60 <= result and result < 80:
-        return render_template('good_result.html', result=result)
-    elif 40 <= result and result < 60:
-        return render_template('normal_result.html', result=result)
-    elif 20 <= result and result < 60:
-        return render_template('bad_result.html', result=result)
-    elif 0 <= result and result < 20:
-        return render_template('the_worst_result.html', result=result)
-    else:
-        return render_template('errorpage.html', num1 = 4, num2 = 0, num3 = 4), 404
+# @app.route('/recomendations', methods=['GET'])
+# def recomendations():
+#     result = int(request.args.get('result')) 
+#     if not result:
+#         return render_template('errorpage.html', num1 = 5, num2 = 0, num3 = 0, message="Нельзя посмотреть рекомендации, не загрузив резюме. Или другая ошибка"), 500
+#     if 80 <= result and result <= 100:
+#         return render_template('excellent_result.html', result=result)
+#     elif 60 <= result and result < 80:
+#         return render_template('good_result.html', result=result)
+#     elif 40 <= result and result < 60:
+#         return render_template('normal_result.html', result=result)
+#     elif 20 <= result and result < 60:
+#         return render_template('bad_result.html', result=result)
+#     elif 0 <= result and result < 20:
+#         return render_template('the_worst_result.html', result=result)
+#     else:
+#         return render_template('errorpage.html', num1 = 4, num2 = 0, num3 = 4), 404
+
+
+
 
 # @app.route('/calculate', methods=['POST'])
 # def calculate():
@@ -157,10 +160,46 @@ def get_pdf():
 
             result = analyze_text_internal(text)
             result = int(result * 100)
-            return render_template('main_ai.html', text=text, result=result,  name=current_user.get_username())
+
+            if not result:
+                return render_template('errorpage.html', num1 = 5, num2 = 0, num3 = 0, message="Нельзя посмотреть рекомендации, не загрузив резюме. Или другая ошибка"), 500
+            if 80 <= result and result <= 100:
+                return render_template('excellent_result.html', result=result, text=text)
+            elif 60 <= result and result < 80:
+                return render_template('good_result.html', result=result, text=text)
+            elif 40 <= result and result < 60:
+                return render_template('normal_result.html', result=result, text=text)
+            elif 20 <= result and result < 60:
+                return render_template('bad_result.html', result=result, text=text)
+            elif 0 <= result and result < 20:
+                return render_template('the_worst_result.html', result=result, text=text)
+            else:
+                return render_template('errorpage.html', num1 = 4, num2 = 0, num3 = 4), 404
+
+            # return render_template('main_ai.html', text=text, result=result,  name=current_user.get_username())
         return render_template('main_ai.html',  name=current_user.get_username())
     except:
         return render_template('errorpage.html', num1 = 5, num2 = 0, num3 = 0), 500
+
+
+@app.route('/recomendations', methods=['GET'])
+def recomendations():
+    result = int(request.args.get('result')) 
+    if not result:
+        return render_template('errorpage.html', num1 = 5, num2 = 0, num3 = 0, message="Нельзя посмотреть рекомендации, не загрузив резюме. Или другая ошибка"), 500
+    if 80 <= result and result <= 100:
+        return render_template('excellent_result.html', result=result)
+    elif 60 <= result and result < 80:
+        return render_template('good_result.html', result=result)
+    elif 40 <= result and result < 60:
+        return render_template('normal_result.html', result=result)
+    elif 20 <= result and result < 60:
+        return render_template('bad_result.html', result=result)
+    elif 0 <= result and result < 20:
+        return render_template('the_worst_result.html', result=result)
+    else:
+        return render_template('errorpage.html', num1 = 4, num2 = 0, num3 = 4), 404
+
 
 # @app.route('/register', methods=['GET', 'POST'])
 # def register():

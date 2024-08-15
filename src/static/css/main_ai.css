@@ -69,6 +69,7 @@ button[type="submit"]:hover {
   margin-right: auto;
   border-radius: 20px;
   font-size: 25px;
+  
   /* font-family: 'Georgia'; */
 }
 
@@ -167,7 +168,6 @@ button[type="submit"]:hover {
   /* Adjust the label and input field sizes for mobile devices */
   label {
     font-size: 25px;
-    margin-bottom: 10px;
   }
 
   input[type="file"] {
@@ -371,7 +371,7 @@ button[type="submit"]:hover {
   label {
     font-size: 40px;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 20%;
   }
 
   input[type="file"] {
@@ -400,6 +400,7 @@ button[type="submit"]:hover {
     border-radius: 10px;
     margin-bottom: 20px;
     width: 80%;
+    margin: 0 auto;
   }
 
   .file-upload-info h4 {

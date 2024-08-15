@@ -9,6 +9,7 @@ body {
   /* height: 100%; */
   font-family: 'PT Sans', sans-serif;
   background-color: #00261b57;
+  width: 100%;
 }
 
 /* body {
@@ -65,7 +66,7 @@ body {
   background-color: #f7f7f7;
   padding: 10px;
   border-bottom: 1px solid #ddd;
-  border-radius: 15%;
+  border-radius: 10%;
 }
 
 .menu__item {
@@ -124,7 +125,7 @@ body {
   width: 40em;
   display: center;
   justify-content: center;
-  padding: 12px 64px;
+  /* padding: 12px 64px; */
   border: none;
   border-radius: 8px;
   color: beige;
@@ -267,7 +268,7 @@ button {
 .header {
   background-color: #00261b57;
   height: 20%;
-  width: 100%;
+  /* width: 100%; */
 
 
 }
@@ -314,7 +315,7 @@ button {
 /* Media Queries */
 
 /* For screens with a maximum width of 1200px */
-@media (max-width: 1200px) {
+@media (min-width: 1024px) {
   .header {
     height: 15%;
   }
@@ -326,12 +327,17 @@ button {
 
   .menu {
     justify-content: space-around;
+    border-radius: 0%;
   }
-
   .menu__item {
     margin-right: 5px;
     margin-left: 5px;
   }
+
+  #myButton {
+    margin-right: 165px;
+  }
+
 }
 
 /* For screens with a maximum width of 992px */
@@ -382,8 +388,7 @@ button {
     max-width: 400px;
   }
 }
-
-/* For screens with a maximum width of 480px */
+/* 
 @media (max-width: 480px) {
   .header {
     height: 40%;
@@ -400,21 +405,22 @@ button {
 
   .menu__item {
     margin-bottom: 10px;
+    font-size: 16px;
   }
 
   .frame {
-    margin-top: 70%;
+    margin-top: 300px;
     max-width: 300px;
     padding: 10%;
     margin-bottom: 50px;
-    margin-bottom: 20%;
   }
 
   .but1 {
     width: 150px;
     height: 40px;
   }
-}
+
+} */
 
 @media (max-width: 768px) {
   .menu {
@@ -431,13 +437,11 @@ button {
     margin-top: -15%;
     margin-right: 20%;
   }
-}
-
-@media (max-width: 480px) {
-  .menu__item {
-    font-size: 16px;
+  .frame {
+    margin-top: 150px;
   }
 }
+
 
 @media (max-width: 320px) {
   .header {
@@ -509,7 +513,7 @@ button {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border-radius: 10px;
+ 
 }
 
 .social-icon,
@@ -572,26 +576,22 @@ button {
   .frame {
     max-width: 300px;
     margin-top: 60%;
-    /* margin: 10px auto; */
-    /* margin-bottom: 7%; */
-    /* margin-left: 5%;
-    margin-right: 5%; */
   }
 
-  .but1 b {
+  /* .but1 b {
     margin-right: 50%;
-  }
+  } */
 
 
   #myButton {
     margin: 0 auto;
-    margin-right: 15%;
+    margin-right: 10%;
     margin-top: -20%;
   }
 
-  #myButton b {
+  /* #myButton b {
     margin-right: 20%;
-  }
+  } */
 }
 
 .flash {

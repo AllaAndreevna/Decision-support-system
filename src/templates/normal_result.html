@@ -23,7 +23,14 @@
         <div class="result">
             {{ result }}%
         </div>
-        <br>
+        <div class="text">
+            <div id="text1">
+                Текст вашего резюме:
+            </div>
+            <div id="text_about_person">
+                {{ text }}
+            </div>
+        </div>
         <br>
         <br>
         <div id="text1">
@@ -50,43 +57,46 @@
             </section>
         </div>
         <br>
-        <div class="smth_about_person">
+        <div class="smth_about_person smth_about_person1">
             <section id="text_about_person">
                 Вам также будет полезно посетить эти сайты, чтобы освежить свои знания и подготовиться к собеседованию с
                 менеджером:
                 <p><a href="https://leetcode.com/">Leetcode</a></p>
                 <p><a href="https://codeforces.com/">Codeforces</a></p>
-                <p><a href="https://yandex.ru/yaintern/algorithm-training?amp&ysclid=lvmoasoech876634858">Тренировки по алгоритмам от Яндекса</a></p>
+                <p><a href="https://yandex.ru/yaintern/algorithm-training?amp&ysclid=lvmoasoech876634858">Тренировки по
+                        алгоритмам от Яндекса</a></p>
             </section>
         </div>
 
-    </div>
 
 
+        <!-- 
     <script>
         var result = sessionStorage.getItem('result');
         document.getElementById("result").innerHTML = result + '%';
-    </script>
+    </script> -->
+
+
+        <footer class="footer">
+            <ul class="social-icon">
+                <li class="social-icon__item"><a class="social-icon__link" href="https://vk.com/club225244210">
+                        <ion-icon name="logo-vk"></ion-icon>
+                    </a></li>
+                <li class="social-icon__item"><a class="social-icon__link" href="https://t.me/decision_support_system">
+                        <img src="./static/icons/icons-telegram.svg" alt="Telegram">
+                    </a></li>
+            </ul>
+            <ul class="menu">
+                <li class="menu__item"><a class="menu__link" href='/'>Главная</a></li>
+                <li class="menu__item"><a class="menu__link" href="/about_project">О проекте</a></li>
+                <li class="menu__item"><a class="menu__link" href="/team">Команда</a></li>
+                <li class="menu__item"><a class="menu__link" href="/profile">Профиль</a></li>
+
+            </ul>
+            <p>&copy;2024 СППР | Все права защищены</p>
+        </footer>
+    </div>
 </body>
-
-<footer class="footer">
-    <ul class="social-icon">
-        <li class="social-icon__item"><a class="social-icon__link" href="https://vk.com/club225244210">
-                <ion-icon name="logo-vk"></ion-icon>
-            </a></li>
-        <li class="social-icon__item"><a class="social-icon__link" href="https://t.me/decision_support_system">
-                <img src="./static/icons/icons-telegram.svg" alt="Telegram">
-            </a></li>
-    </ul>
-    <ul class="menu">
-        <li class="menu__item"><a class="menu__link" href='/'>Главная</a></li>
-        <li class="menu__item"><a class="menu__link" href="/about_project">О проекте</a></li>
-        <li class="menu__item"><a class="menu__link" href="/team">Команда</a></li>
-        <li class="menu__item"><a class="menu__link" href="/profile">Профиль</a></li>
-
-    </ul>
-    <p>&copy;2024 СППР | Все права защищены</p>
-</footer>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 

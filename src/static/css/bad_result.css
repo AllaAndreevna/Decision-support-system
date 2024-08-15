@@ -1,57 +1,55 @@
 @charset "UTF-8";
-/* * {
-    margin: 0;
-    padding: 0;
-} */
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    width: 100%;
+}
 
 .main_block {
-    background-color: #f5f1ed;
-    border-right: 100px solid #70798c;
-    border-left: 100px solid #70798c;
-<<<<<<< HEAD
-    padding-bottom: 250px;
-=======
->>>>>>> 07b3fc0225dfa420c754e84df9aa64889fb64fb4
+    background-color: white;
+    border-right: 80px solid #00261b;
+    border-left: 80px solid #00261b;
+    /* padding: 250px; */
 
 }
 
 #text {
-    color: #252323;
-    font-family: 'Georgia';
-    font-size: 40px;
+    color: #70798c;
+    font-size: 60px;
     font-weight: bold;
-    justify-content: center;
+    /* justify-content: center; */
     display: flex;
-    /* margin-top: 100px; */
+    width: 90%;
+    padding-top: 10%;
+    padding-left: 10%;
 }
 
 #text1 {
-    color: #252323;
-    font-family: 'Georgia';
+    color: #70798c;
+    /* font-family: 'Georgia'; */
     font-size: 50px;
     font-weight: bold;
     justify-content: center;
     display: flex;
-    /* margin-top: 100px; */
+    width: 90%;
+    padding: 5%;
+
 }
 
-#result {
-    color: #a99985;
+.result {
+    color: #70798c;
     font-family: 'Georgia';
     font-size: 300px;
     font-weight: bold;
     justify-content: center;
     display: flex;
-
-
 }
 
 .smth_about_person {
-    border: 10px dashed #70798c;
+    border: 10px dashed #00261b;
     justify-content: center;
-    background-color: #dad2bc;
+    background-color: #00261b57;
     color: #2b2d42;
-    font-family: 'Georgia';
     font-size: 50px;
     display: flex;
     width: 85%;
@@ -62,24 +60,22 @@
 }
 
 #text_about_person {
-    margin: 80px;
+    margin: 10%;
+    color: #00261b;
+
 }
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 
-
-
 .footer {
-    /* position: relative; */
-    /* width: 100%; */
-    /* background: #ef233c; */
-    background: #70798c; 
+    background: #00261b;
     min-height: 100px;
     padding: 20px 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* margin-top: 100px; */
+    /* border-radius: 10px; */
 }
 
 .social-icon,
@@ -129,4 +125,208 @@
     margin: 15px 0 10px 0;
     font-size: 1rem;
     font-weight: 300;
+}
+
+.text {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    width: 80%;
+    margin: 20px auto;
+    margin-top: 10%;
+    font-size: 50px;
+
+}
+
+.text::before {
+    content: "";
+    /* add a pseudo-element to create a top border */
+    display: block;
+    height: 2px;
+    background-color: #ccc;
+    /* light gray top border */
+    margin-bottom: 10px;
+}
+
+.text p {
+    margin-bottom: 20px;
+    /* add some margin between paragraphs */
+}
+
+.smth_about_person1 {
+    margin-bottom: 10%;
+}
+
+@media only screen and (max-width: 2560px) {
+
+    .main_block {
+        border-right: 50px solid #00261b;
+        border-left: 50px solid #00261b;
+    }
+
+    #text {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    #text1 {
+        font-size: 54px;
+        padding: 10px;
+    }
+
+    .result {
+        font-size: 120px;
+        padding: 10px;
+    }
+
+    .smth_about_person {
+        border: 5px dashed #00261b;
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    .text {
+        padding: 10px;
+        font-size: 25px;
+    }
+
+    .footer {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .social-icon {
+        flex-wrap: wrap;
+    }
+
+    .social-icon__item {
+        margin: 5px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+    }
+
+    .menu__item {
+        margin: 5px;
+    }
+}
+
+@media (max-width: 475px) {
+    .main_block {
+        background-color: white;
+        border-right: 10px solid #00261b;
+        border-left: 10px solid #00261b;
+    }
+
+    #text1 {
+        font-size: 1.3rem;
+        margin-top: 5%;
+    }
+
+    .text {
+        font-size: 1rem;
+    }
+
+    #text_about_person {
+        margin: 10%;
+        color: #00261b;
+    }
+
+    .smth_about_person {
+        border: 3px dashed #00261b;
+    }
+}
+
+@media only screen and (min-width: 475px) and (max-width: 835px) {
+    .main_block {
+        background-color: white;
+        border-right: 50px solid #00261b;
+        border-left: 50px solid #00261b;
+        width: 100%;
+    }
+
+    #text {
+        font-size: 2.5rem;
+    }
+
+    .result {
+        font-size: 7rem;
+    }
+
+    #text1 {
+        font-size: 2rem;
+    }
+
+    #text_about_person {
+        margin: 5%;
+        color: #00261b;
+        font-size: 1.5rem;
+        padding: 10%;
+    }
+
+    .smth_about_person {
+        border: 5px dashed #00261b;
+    }
+
+    .footer {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 835px) and (max-width: 1092px) {
+    #text {
+        font-size: 4rem;
+    }
+
+    .result {
+        font-size: 9rem;
+    }
+
+    #text1 {
+        font-size: 3rem;
+    }
+
+    #text_about_person {
+        color: #00261b;
+        font-size: 1.5rem;
+        padding: 5%;
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 1092px) {
+
+    #text {
+        font-size: 3.5rem;
+        margin-left: 10%;
+    }
+    #text1{
+        font-size: 2.5rem;
+    }
+    .main_block {
+        background-color: white;
+        border-right: 120px solid #00261b;
+        border-left: 120px solid #00261b;
+        
+    }
+    .result {
+        font-size: 10rem;
+    }
+    #text_about_person {
+        color: #00261b;
+        font-size: 1.5rem;
+        padding: 5%;
+        margin: 0;
+    }
+    .text {
+        margin: 7%;
+    }
+    #text_about_person {
+        color: #00261b;
+        font-size: 1.5rem;
+        padding: 3%;
+        margin: 0;
+    }
 }
