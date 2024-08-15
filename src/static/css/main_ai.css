@@ -14,26 +14,20 @@ body {
   border-radius: 10px;
 }
 
+/* 
 form {
   max-width: 500px;
-  /* add a max width to the form */
   margin: 50px auto;
-  /* center the form horizontally */
   padding: 20px;
-  /* add some padding to the form */
   border: 1px solid #ccc;
-  /* add a border to the form */
   border-radius: 10px;
-  /* add a border radius to the form */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  /* add a subtle shadow to the form */
 }
 
 label {
   font-size: 40px;
   font-weight: bold;
   margin-bottom: 20px;
-  /* font-family: 'Georgia'; */
 }
 
 input[type="file"] {
@@ -42,25 +36,19 @@ input[type="file"] {
   padding: 10px;
   font-size: 18px;
   margin-bottom: 20px;
-  /* font-family: 'Georgia'; */
 }
 
 button[type="submit"] {
   background-color: #023224ce;
-  /* add a green background to the submit button */
   color: #ffffff;
-  /* add white text to the submit button */
   padding: 10px 20px;
-  /* add some padding to the submit button */
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  /* add a pointer cursor to the submit button */
-}
+} */
 
 button[type="submit"]:hover {
   background-color: #00261b;
-  /* add a darker green background on hover */
 }
 
 #pdf-output {
@@ -91,13 +79,10 @@ button[type="submit"]:hover {
   margin-right: auto; */
   margin-left: 50%;
   font-weight: bold;
-  /* add bold font weight to the analysis result */
   color: #00261b;
-  /* add a green color to the analysis result */
 }
 
 
-/* Footer styles */
 .footer {
   background: #00261b;
   min-height: 100px;
@@ -169,7 +154,7 @@ button[type="submit"]:hover {
     margin-bottom: 10px;
   } */
 
-@media (max-width: 768px) {
+@media (max-width: 2560px) {
 
   /* Adjust the form layout for mobile devices */
   form {
@@ -205,6 +190,37 @@ button[type="submit"]:hover {
     padding: 10px 20px;
   }
 
+
+  .social-icon,
+  .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+  }
+
+  .social-icon__item,
+  .menu__item {
+    list-style: none;
+  }
+
+  .social-icon__link {
+    font-size: 2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+  }
+
+  .social-icon__link:hover {
+    transform: translateY(-10px);
+  }
+
+
+
+  /* 
   .social-icon,
   .menu {
     flex-wrap: wrap;
@@ -215,122 +231,205 @@ button[type="submit"]:hover {
     font-size: 1.0rem;
     margin: 0 5px;
   }
-}
+} */
 
-@media (max-width: 320px) {
-  #analysis-result {
-    margin-left: 42%;
+  @media (max-width: 320px) {
+    #analysis-result {
+      margin-left: 42%;
+    }
   }
-}
 
-.rules {
-  font-size: 25px;
-  margin: 20px auto;
-  padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  border: 4px solid #00261b;
-  width: 80%;
-}
+  .rules {
+    font-size: 25px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border: 4px solid #00261b;
+    width: 80%;
+  }
 
-.rules p {
-  font-size: 25px;
-  margin-bottom: 20px;
-}
+  .rules p {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
 
-.rules ol {
-  list-style: decimal;
-  padding: 0 20px;
-}
+  .rules ol {
+    list-style: decimal;
+    padding: 0 20px;
+  }
 
-.rules li {
-  margin-bottom: 10px;
-}
+  .rules li {
+    margin-bottom: 10px;
+  }
 
-.rules li p {
-  font-size: 25px;
-  margin-bottom: 0;
-}
+  .rules li p {
+    font-size: 25px;
+    margin-bottom: 0;
+  }
 
-.example {
-  margin-top: 5%;
-  margin: 20px auto;
-  padding: 20px;
-  background-color: #f9f9f9;
-  border: 1px solid #00261b;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  font-size: 20px;
-  line-height: 1.5;
-  position: relative;
-  width: 70%;
-}
+  .example {
+    margin-top: 5%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #00261b;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+    line-height: 1.5;
+    position: relative;
+    width: 70%;
+  }
 
-.example p {
-  margin-bottom: 20px;
-}
+  .example p {
+    margin-bottom: 20px;
+  }
 
-.example p:last-child {
-  font-size: 14px;
-  font-style: italic;
-  margin-bottom: 0;
-}
+  .example p:last-child {
+    font-size: 14px;
+    font-style: italic;
+    margin-bottom: 0;
+  }
 
-.hero {
-  background-image: linear-gradient(to bottom, #f7f7f7, #00261b57);
-  padding: 100px;
-  text-align: center;
-}
+  .hero {
+    background-image: linear-gradient(to bottom, #f7f7f7, #00261b57);
+    padding: 100px;
+    text-align: center;
+  }
 
-.hero h1 {
-  font-size: 36px;
-  margin-bottom: 10px;
-}
+  .hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
 
-.pdf-label {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 14px;
-  font-weight: bold;
-  color: #FF0000;
-  /* red color */
-  text-transform: uppercase;
-}
+  .pdf-label {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #FF0000;
+    /* red color */
+    text-transform: uppercase;
+  }
 
-.attention {
-  background-color: #00261b57;
-  border-radius: 10px;
-  border: 1px solid #00261b;
-  padding: 3%;
-}
+  .attention {
+    background-color: #00261b57;
+    border-radius: 10px;
+    border: 1px solid #00261b;
+    padding: 3%;
+  }
 
-.attention.wow.animate__animated.animate__pulse {
-  animation-iteration-count: infinite;
-  animation-duration: 2s;
-}
+  .attention.wow.animate__animated.animate__pulse {
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+  }
 
-.arrow-down {
-  text-align: center;
-  margin: 20px 0;
-}
+  .arrow-down {
+    text-align: center;
+    margin: 20px 0;
+  }
 
-.arrow-down::before {
-  content: "";
-  display: inline-block;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 10px 10px 0 10px;
-  border-color: red transparent transparent transparent;
-  margin: 0 5px;
-}
+  .arrow-down::before {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 10px 0 10px;
+    border-color: red transparent transparent transparent;
+    margin: 0 5px;
+  }
 
-.arrow-down i {
-  font-size: 48px;
-  transform: scale(2);
-  /* scale up the arrow icon by 2x */
-  margin: 0 5px;
-}
+  .arrow-down i {
+    font-size: 48px;
+    transform: scale(2);
+    /* scale up the arrow icon by 2x */
+    margin: 0 5px;
+  }
+
+
+  form {
+    max-width: 800px;
+    width: 80%;
+    /* Set a fixed width */
+    margin: 50px auto;
+    /* Center the form horizontally */
+    padding: 20px;
+    /* Add some padding to the form */
+    border: 1px solid #ccc;
+    /* Add a border to the form */
+    border-radius: 10px;
+    /* Add a border radius to the form */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Add a subtle shadow to the form */
+  }
+
+  label {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  input[type="file"] {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    width: 80%;
+    /* Make the input field take up full width */
+  }
+
+  button[type="submit"] {
+    background-color: #023224ce;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .file-upload-info {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 80%;
+  }
+
+  .file-upload-info h4 {
+    margin-top: 0;
+  }
+
+  .file-upload-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .file-upload-info li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  .file-upload-info i {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+
+  .file-upload-info p {
+    font-size: 14px;
+    color: #666;
+  }
+
+  .recomendations {
+    display: inline-block;
+    margin: 0 auto;
+    margin-bottom: 5%;
+
+  }

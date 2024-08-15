@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Result 20-40%</title>
+    <title>Ваш результат</title>
     <link rel="icon" href=" {{ url_for ('static', filename='icons/icon!!.png') }}" type="image/x-icon">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/bad_result.css') }}">
 </head>
@@ -17,44 +17,43 @@
         <br>
         <br>
         <div id="text">
-            Your chance to get a job is:
+            Ваша вероятность получить работу составляет:
         </div>
         <br>
-        <div id="result"></div>
-        <br>
+        <div class="result">
+            {{ result }}%
+        </div>
         <br>
         <br>
         <div id="text1">
-            We believe you can do it better!
+            Мы верим, что вы можете лучше!
         </div>
         <br>
         <br>
         <div class="smth_about_person">
             <section id="text_about_person">
-                Do not be upset if this result does not satisfy you.
-                we believe that you still have everything ahead of you,
-                that you will be able to do better if you continue to work!
-            </section>
+                Не расстраивайтесь, если этот результат вас не удовлетворит.
+                мы верим, что у вас еще все впереди,
+                что вы сможете добиться большего, если продолжите работать!</section>
         </div>
 
         <br>
         <div class="smth_about_person">
             <section id="text_about_person">
-                We strongly recommend that you look at simpler vacancies,
-                or take training courses, solve more algorithmic problems.
-                Remember that the most diligent wins!
+                Настоятельно рекомендуем вам посмотреть вакансии попроще,
+                или пройти курсы повышения квалификации, решить больше алгоритмических задач.
+                Помните, что побеждает самый старательный!
             </section>
         </div>
         <br>
         <div class="smth_about_person">
             <section id="text_about_person">
-                It will be also useful for you to visit these sites
-                to refresh your knowleges and prepare for an interview
-                with a manager:
+                Вам также будет полезно посетить эти сайты, чтобы освежить свои знания и подготовиться к собеседованию с
+                менеджером:
                 <p><a href="https://leetcode.com/">Leetcode</a></p>
                 <p><a href="https://codeforces.com/">Codeforces</a></p>
-                <p><a href="https://yandex.ru/yaintern/algorithm-training?amp&ysclid=lvmoasoech876634858">Yandex
-                        Algorithm-training</a></p>
+                <p><a href="https://yandex.ru/yaintern/algorithm-training?amp&ysclid=lvmoasoech876634858">Тренировки по
+                        алгоритмам от Яндекса</a></p>
             </section>
         </div>
 
@@ -77,14 +76,13 @@
             </a></li>
     </ul>
     <ul class="menu">
-        <li class="menu__item"><a class="menu__link" href='/'>Home</a></li>
-        <li class="menu__item"><a class="menu__link" href="#">About</a></li>
-        <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
-        <li class="menu__item"><a class="menu__link" href="#">Team</a></li>
-        <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+        <li class="menu__item"><a class="menu__link" href='/'>Главная</a></li>
+        <li class="menu__item"><a class="menu__link" href="/about_project">О проекте</a></li>
+        <li class="menu__item"><a class="menu__link" href="/team">Команда</a></li>
+        <li class="menu__item"><a class="menu__link" href="/profile">Профиль</a></li>
 
     </ul>
-    <p>&copy;2024 Alla Chernova | All Rights Reserved</p>
+    <p>&copy;2024 СППР | Все права защищены</p>
 </footer>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

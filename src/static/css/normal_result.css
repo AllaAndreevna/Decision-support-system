@@ -32,15 +32,13 @@
     /* margin-top: 100px; */
 }
 
-#result {
+.result {
     color: #004e89;
     font-family: 'Georgia';
     font-size: 300px;
     font-weight: bold;
     justify-content: center;
     display: flex;
-
-
 }
 
 .smth_about_person {

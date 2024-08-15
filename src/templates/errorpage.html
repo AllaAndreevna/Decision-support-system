@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ошибка 404</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4b9ba14b0f.js" crossorigin="anonymous"></script>
+    <link rel="icon" href=" {{ url_for ('static', filename='icons/icon!!.png') }}" type="image/x-icon">
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename = 'css/page404.css') }}">
+</head>
+
+<body>
+    <div class="mainbox">
+        <div class="err">{{ num1 }}</div>
+        <div class="err1">{{ num2 }}</div>
+        <div class="err2">{{ num3 }}</div>
+        <div class="msg">{{ message }}
+           
+            
+            <img src="static/img/Логотип_СППР.png">
+            <p>Давайте вернемся на <a href="/">главную</a> и попробуем снова.</p>
+
+        </div>
+    </div>
+</body>
+
+</html>
+

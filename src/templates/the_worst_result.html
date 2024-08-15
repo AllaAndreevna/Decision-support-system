@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Result is 0 - 20%</title>
+    <title>Ваш результат</title>
     <link rel="icon" href=" {{ url_for ('static', filename='icons/icon!!.png') }}" type="image/x-icon">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/the_worst_result.css') }}">
     <!-- <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename = 'css/style.css') }}"> -->
@@ -18,45 +18,44 @@
         <br>
         <br>
         <div id="text">
-            Your chance to get a job is:
+            Ваша вероятность получить работу составляет:
         </div>
         <br>
-        <div id="result"></div>
-        <br>
+        <div class="result">
+            {{ result }}%
+        </div>
         <br>
         <br>
         <div id="text1">
-            Do not worry!
+            Не волнуйтесь!
         </div>
         <br>
         <br>
         <div class="smth_about_person">
             <section id="text_about_person">
-                You see, at first glance, everything may seem very bad. 
-                BUT in fact, not everything is so bad. 
-                The main thing is to understand what result you want to achieve 
-                and whether you really need such a vacancy.
+                Видите ли, на первый взгляд может показаться, что все неисправимо плохо.
+                НО на самом деле не все так печально.
+                Главное понимать, какого результата вы хотите добиться
+                и нужна ли вам такая вакансия.
             </section>
         </div>
 
         <br>
         <div class="smth_about_person">
             <section id="text_about_person">
-                We recommend that you reflect, focus on your desires, 
-                dreams and goals and understand what you need and what 
-                you are striving for.
+                Мы рекомендуем вам поразмышлять, сосредоточиться на своих желаниях,
+                мечтах и ​​целях и понять, что вам нужно и к чему
+                вы стремитесь.
             </section>
         </div>
         <br>
         <div class="smth_about_person">
             <section id="text_about_person">
-                It will be also useful for you to visit these sites
-                to refresh your knowleges and prepare for an interview
-                with a manager:
+                Вам также будет полезно посетить эти сайты, чтобы освежить свои знания и подготовиться к собеседованию с
+                менеджером:
                 <p><a href="https://leetcode.com/">Leetcode</a></p>
                 <p><a href="https://codeforces.com/">Codeforces</a></p>
-                <p><a href="https://yandex.ru/yaintern/algorithm-training?amp&ysclid=lvmoasoech876634858">Yandex
-                        Algorithm-training</a></p>
+                <p><a href="https://yandex.ru/yaintern/algorithm-training?amp&ysclid=lvmoasoech876634858">Тренировки по алгоритмам от Яндекса</a></p>
             </section>
         </div>
 
@@ -80,14 +79,13 @@
             </a></li>
     </ul>
     <ul class="menu">
-        <li class="menu__item"><a class="menu__link" href = '/'>Home</a></li>
-        <li class="menu__item"><a class="menu__link" href="#">About</a></li>
-        <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
-        <li class="menu__item"><a class="menu__link" href="#">Team</a></li>
-        <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+        <li class="menu__item"><a class="menu__link" href='/'>Главная</a></li>
+        <li class="menu__item"><a class="menu__link" href="/about_project">О проекте</a></li>
+        <li class="menu__item"><a class="menu__link" href="/team">Команда</a></li>
+        <li class="menu__item"><a class="menu__link" href="/profile">Профиль</a></li>
 
     </ul>
-    <p>&copy;2024 Alla Chernova | All Rights Reserved</p>
+    <p>&copy;2024 СППР | Все права защищены</p>
 </footer>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

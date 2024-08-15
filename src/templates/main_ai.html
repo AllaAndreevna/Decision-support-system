@@ -10,7 +10,7 @@
     <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename = 'css/main_ai.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    
+
     <script>
         new WOW().init();
     </script>
@@ -20,10 +20,14 @@
     <div class="plane"></div>
 
     <section class="hero">
-        <h1>Добро пожаловать на страницу анализа Вашего резюме!</h1>
+        <h1>Добро пожаловать,
+            <h1>{{ name }}, </h1>
+            <h1>на страницу анализа Вашего резюме!
+            </h1>
+        </h1>
     </section>
     <div class="rules">
-        <p class="attention wow animate__animated animate__pulse">Обратите внимание, что резюме важно составить согласно
+        <p class="attention">Обратите внимание, что резюме важно составить согласно
             структуре, описанной ниже. Иначе, мы не
             сможем
             корректно
@@ -79,11 +83,23 @@
 
         <p>С уважением,</p>
         <p>Алла Чернова</p>
-        <div class="pdf-label">PDF Format</div>
+        <div class="pdf-label">Пример структуры загружаемого резюме</div>
     </div>
+
+    <div class="file-upload-info">
+        <h4>Доступные форматы:</h4>
+        <ul>
+            <li><i class="fas fa-file-pdf"></i> PDF</li>
+            <li><i class="fas fa-file-word"></i> DOC</li>
+            <li><i class="fas fa-file-word"></i> DOCX</li>
+            <li><i class="fas fa-file-text"></i> TXT</li>
+        </ul>
+        <p>Пожалуйста, выберите файл одного из доступных форматов для загрузки.</p>
+    </div>
+
     <form action="/get_pdf" method="post" enctype="multipart/form-data" id="pdf-form">
-        <label for="pdf-file">Форма для загрузки Вашего резюме:</label>
-        <input type="file" id="pdf-file" name="pdf-file" accept="application/pdf">
+        <label for="pdf-file docx">Форма для загрузки Вашего резюме:</label>
+        <input type="file" id="pdf-file" name="pdf-file" accept=".pdf, .doc, .docx, .txt">
         <button type="submit">Загрузить</button>
     </form>
     <br>
@@ -93,11 +109,25 @@
 
     <div id="pdf-output">{{ text }}</div>
 
-    <div class="label">Здесь отобразится результат оценки Вашего резюме:
+    <div class="label">Здесь отобразится результат оценки Вашего резюме из 100:
         <div id="analysis-result">{{ result }}</div>
     </div>
+    <!-- <form action="/recomendations" method="get">
+        <input type="hidden" name="result" value="{{ result }}">
+        <button type="submit">Посмотреть рекомендации</button>
+    </form>
 
-
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var result = '{{ result }}';
+            var button = document.getElementById('recommendations-button');
+            if (result) {
+                button.style.display = 'block';
+            } else {
+                button.style.display = 'none';
+            }
+        });
+    </script> -->
 </body>
 
 <footer class="footer">
@@ -115,9 +145,8 @@
         <li class="menu__item"><a class="menu__link" href="/team">Команда</a></li>
         <!-- <li class="menu__item"><a class="menu__link" href="#">Партнеры</a></li>
         <li class="menu__item"><a class="menu__link" href="#">Связаться</a></li> -->
-
     </ul>
-    <p>&copy;2024 Алла Чернова | Все права защищены</p>
+    <p>&copy;2024 СППР | Все права защищены</p>
 </footer>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

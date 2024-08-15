@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <link type="text/css" href="{{url_for('static', filename='css/style_reg.css')}}" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@vkid/sdk@<2.1.0/dist-sdk/umd/index.js"></script>
+    <!-- <script src="vk_auth.js"></script> -->
+    {% block title %}
+    {% if title %}
+    <title>СППР - {{ title }}</title>
+    {% else %}
+    <title>СППР</title>
+    {% endif %}
+    {% endblock %}
+</head>
+
+<body>
+    {% block content %}
+    {% if title %}
+    <h1>{{ title }}</h1>
+    {% else %}
+    <h1>СППР</h1>
+    {% endif %}
+    {% endblock %}
+
+</body>
+
+</html>

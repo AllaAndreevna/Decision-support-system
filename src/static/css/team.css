@@ -169,6 +169,7 @@ footer {
 .menu__link:hover {
     opacity: 1;
 }
+
 .social-icon,
 .menu {
     position: relative;
@@ -195,3 +196,28 @@ footer {
 .social-icon__link:hover {
     transform: translateY(-10px);
 }
+
+@media (max-width: 518px) {
+    .person-container {
+        flex-direction: column;
+    }
+
+    .person-photo {
+        margin: 0 auto;
+    }
+
+    .person-info {
+        width: 100%;
+    }
+}
+
+
+.start-button {
+    background-color: #00261b;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+

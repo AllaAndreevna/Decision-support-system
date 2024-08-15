@@ -152,6 +152,19 @@ footer {
     flex: 1;
 }
 
+.works_adv1 {
+    background-color: #f7f7f7;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    flex: 1;
+    font-size: 110%;
+    margin-top: 5%;
+    font-weight: bold;
+    width: fit-content;
+    position: center;
+}
+
 .menu {
     position: relative;
     display: flex;
@@ -259,16 +272,17 @@ p {
     margin: 0 auto 20px;
 }
 
-.actuality p {
+/* .actuality p {
     width: 60%;
     text-align: center;
-    margin: 0 auto;
+    margin: 15px;
     font-size: 110%;
     margin-top: 5%;
     font-weight: bold;
-}
+    width: fit-content;
+} */
 
-.actuality.wow.animate__animated.animate__pulse {
+/* .actuality.wow.animate__animated.animate__pulse {
     animation-iteration-count: infinite;
     animation-duration: 2s;
 }
@@ -276,7 +290,7 @@ p {
     animation-iteration-count: infinite;
     animation-duration: 2s;
 }
-
+ */
 
 
 .social-icon,
