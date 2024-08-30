@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>СППР - Анализ</title>
-    <link rel="icon" href=" {{ url_for ('static', filename='icons/icon!!.png') }}" type="image/x-icon">
+    <title>СППР</title>
+    <link rel="icon" href=" {{ url_for ('static', filename='icons/aura logo.svg') }}" type="image/x-icon">
     <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename = 'css/main_ai.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
@@ -17,141 +17,50 @@
 </head>
 
 <body>
-    <div class="plane"></div>
 
-    <section class="hero">
-        <h1>Добро пожаловать,
-            <h1>{{ name }}, </h1>
-            <h1>на страницу анализа Вашего резюме!
-            </h1>
-        </h1>
-    </section>
-    <div class="rules">
-        <p class="attention">Обратите внимание, что резюме важно составить согласно
-            структуре, описанной ниже. Иначе, мы не
-            сможем
-            корректно
-            оценить Вашу заявку.</p>
-        <p>Необходимо ответить на следующие 5 вопросов. Каждый ответ должен занимать по 3-4 предложения.
-            Каждый ответ должен быть выделен в отдельный абзац.</p>
-        <ol>
-            <li>
-                <p>Опыт работы, сколько проектов было выполнено и каких</p>
-            </li>
-            <li>
-                <p>Скорость обучения новому, способность к адаптации к новым условиям, замотивированность к работе
-                </p>
-            </li>
-            <li>
-                <p>Характер, конфликтность</p>
-            </li>
-            <li>
-                <p>Олимпиады</p>
-            </li>
-            <li>
-                <p>Образование. Есть ли степень бакалавра, магистра</p>
-            </li>
-        </ol>
-    </div>
-    <div class="arrow-down">
-        <i class="fas fa-arrow-down" style="color: #34C759;"></i>
-        <!-- or multiple arrows -->
-        <!--<i class="fas fa-arrow-down" style="color: #34C759;"></i>
-        <i class="fas fa-arrow-down" style="color: #34C759;"></i>
-        <i class="fas fa-arrow-down" style="color: #34C759;"></i>-->
-    </div>
-    <div class="example wow animate__animated animate__fadeInLeft">
-        <p>Резюме на вакансию стажёр-разработчик.</p>
-        <p>Здравствуйте, меня зовут Алла Чернова, меня заинтересовала ваша вакансия, потому что ранее мне приходилось
-            работать на похожими задачами. Мой опыт разработки составляют шесть проектов: распознавание текста, обучение
-            сетей, создание приложения, написание веб-сайта, создание обучающей игры и тестирование продукта. Так же
-            немного
-            занималась деплоем, но пока не очень хорошо с этим работаю.</p>
-        <p>Я очень замотивированный студент, желающий узнать
-            как можно больше! Моя скорость обучения также очень высока, поскольку я люблю работать. Все поставленные
-            задачи
-            я выполняю вовремя, соблюдаю дедлайны. В течение работы над проектом я могу предложить новые идеи, но не
-            всегда,
-            поскольку могу не разбираться хорошо. </p>
-        <p>В школьные годы принимала участие в олимпиадах разного уровня по техническим специальностям. Стала призером
-            олимпиады второго уровня по информатике в 10 классе, финалистом командного соревнования по биоинформатике,
-            победитель конкурса Большая Перемена в 2021 году.</p>
-        <p>По характеру я совсем не конфликтный человек. В предыдущих проектах не
-            было ссор, связанных со мной.</p>
-        <p>На данный момент обучаюсь на бакалавриате, магистерской степени не имею.</p>
-        <br>
 
-        <p>С уважением,</p>
-        <p>Алла Чернова</p>
-        <div class="pdf-label">Пример структуры загружаемого резюме</div>
+    <div class="image-row">
+        <img src="./static/img/second slide left.svg" alt="background">
+        <!-- <div class="columns">
+            <div class="upper_column">
+                <img src="./static/img/colomn 4.svg" alt="column">
+                <img src="./static/img/colomn 5.svg" alt="column">
+                <img src="./static/img/colomn 6.svg" alt="column">
+            </div>
+            <div class="value">
+                <img src="./static/icons/second slide upload.svg" alt="upload" class="upload-icon">
+                <div class="text1 text">загрузите своё <br> резюме</div>
+            </div>
+            <div>
+                <img src="./static/icons/second slide aura.svg" alt="aura" class="aura-icon">
+                <div class="text2 text">сппр его<br>проанализирует</div>
+            </div>
+            <div class="value2">
+                <span class="one_hundred">100<span class="pro">%</span></span>
+                <div class="text3 text">узнай свой<br>процент успеха</div>
+            </div>
+            <div class="bottom_column">
+                <img src="./static/img/colomn 1.svg" alt="column">
+                <img src="./static/img/colomn 2.svg" alt="column">
+                <img src="./static/img/colomn 3.svg" alt="column">
+            </div>
+        </div> -->
+        <img src="./static/img/second slide.svg" alt="background">
+        <img src="./static/img/second slide right.svg" alt="background">
     </div>
 
-    <div class="file-upload-info">
-        <h4>Доступные форматы:</h4>
-        <ul>
-            <li><i class="fas fa-file-pdf"></i> PDF</li>
-            <li><i class="fas fa-file-word"></i> DOC</li>
-            <li><i class="fas fa-file-word"></i> DOCX</li>
-            <li><i class="fas fa-file-text"></i> TXT</li>
-        </ul>
-        <p>Пожалуйста, выберите файл одного из доступных форматов для загрузки.</p>
+
+    <div class="container">
+        <img src="./static/img/third slide left hand.svg" alt="left hand">
+        <form action="/get_pdf" method="post" enctype="multipart/form-data" id="pdf-form">
+            <label for="pdf-file">
+                <img src="./static/icons/third slide upload button.png" alt="upload button">
+                <input type="file" id="pdf-file" name="pdf-file" accept=".pdf, .doc, .docx, .txt" style="position: absolute; left: -9999px;">
+            </label>
+            <button type="submit" class="upload-button">загрузить</button>
+        </form>
+        <img src="./static/img/third slide right hand.png" alt="right hand">
     </div>
-
-    <form action="/get_pdf" method="post" enctype="multipart/form-data" id="pdf-form">
-        <label for="pdf-file docx">Форма для загрузки Вашего резюме:</label>
-        <input type="file" id="pdf-file" name="pdf-file" accept=".pdf, .doc, .docx, .txt">
-        <button type="submit">Загрузить</button>
-    </form>
-    <br>
-    <br>
-    <!-- <div class="label">Ниже отобразится загруженное Вами резюме. Пожалуйста, проверьте, все ли правильно загрузилось.
-    </div> -->
-
-    <!-- <div id="pdf-output">{{ text }}</div> -->
-
-    <!-- <div class="label">Здесь отобразится результат оценки Вашего резюме из 100:
-        <div id="analysis-result">{{ result }}</div>
-    </div> -->
-
-
-    <!-- <form action="/recomendations" method="get">
-        <input type="hidden" name="result" value="{{ result }}">
-        <button type="submit">Посмотреть рекомендации</button>
-    </form>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            var result = '{{ result }}';
-            var button = document.getElementById('recommendations-button');
-            if (result) {
-                button.style.display = 'block';
-            } else {
-                button.style.display = 'none';
-            }
-        });
-    </script> -->
 </body>
-
-<footer class="footer">
-    <ul class="social-icon">
-        <li class="social-icon__item"><a class="social-icon__link" href="https://vk.com/club225244210">
-                <ion-icon name="logo-vk"></ion-icon>
-            </a></li>
-        <li class="social-icon__item"><a class="social-icon__link" href="https://t.me/decision_support_system">
-                <img src="./static/icons/icons-telegram.svg" alt="Telegram">
-            </a></li>
-    </ul>
-    <ul class="menu">
-        <li class="menu__item"><a class="menu__link" href='/'>Главная</a></li>
-        <li class="menu__item"><a class="menu__link" href='/about_project'>О проекте</a></li>
-        <li class="menu__item"><a class="menu__link" href="/team">Команда</a></li>
-        <!-- <li class="menu__item"><a class="menu__link" href="#">Партнеры</a></li>
-        <li class="menu__item"><a class="menu__link" href="#">Связаться</a></li> -->
-    </ul>
-    <p>&copy;2024 СППР | Все права защищены</p>
-</footer>
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
 
 </html>

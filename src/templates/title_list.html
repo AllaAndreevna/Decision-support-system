@@ -4,71 +4,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>СППР - Главная</title>
+    <title>СППР</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="icon" href=" {{ url_for ('static', filename='icons/aura logo.svg') }}" type="image/x-icon">
 
 </head>
 
 <body>
-    <div class="header">
-        <div class="block1">
-            <div class="block0">
-                <img src=".\static\img\logo_for_site..jpg" alt="logo">
-            </div>
-            СППР
-        </div>
-
-        <div class="block2">
-            <ul class="menu">
-                <li class="menu__item"><a class="menu__link" href='/login'>Авторизация</a></li>
-                <li class="menu__item"><a class="menu__link" href="/about_project">О проекте</a></li>
-                <li class="menu__item"><a class="menu__link" href="/team">Команда</a></li>
-
-            </ul>
-        </div>
+    <div class="text0 text">
+        <a href="/">Главная</a>
     </div>
-    <div class="frame">
-        <br>
-        <br>
-        <h1>
-            <p>Система поддержки принятия решений</p>
-            <p>на основе искуственного интеллекта</p>
-        </h1>
-        <br>
-        <br>
-        <br>
-        <br>
-        <!-- onclick="window.location.href = '/main' ;"><b>Начать</b></button></p> -->
-        <p><button id="myButton" class="but1" type="button"
-                onclick="window.location.href = '/main_ai' ;"><b>Начать</b></button></p>
-        <!-- <p><button id="myButton" class="but1" type="button"
-                    onclick="window.location.href = '/register' ;"><b>Регистрация</b></button></p> -->
-
-        <br>
+    <div class="text1 text">
+        <a href='/profile'>Аккаунт</a>
     </div>
+    <div class="text2 text">
+        <a href="/about_project">О проекте</a>
+    </div>
+    <div class="text3 text">
+        <a href="/team">Команда</a>
+    </div>
+    <div class="image-row">
+        <img src="./static/img/first slide david right.svg" alt="David">
 
-
-
-    <footer class="footer">
-        <ul class="social-icon">
-            <li class="social-icon__item"><a class="social-icon__link" href="https://vk.com/club225244210">
-                    <ion-icon name="logo-vk"></ion-icon>
-                </a></li>
-            <li class="social-icon__item"><a class="social-icon__link" href="https://t.me/decision_support_system">
-                    <img src="./static/icons/icons-telegram.svg" alt="Telegram">
-                </a></li>
-        </ul>
-        <ul class="menu_footer">
-            <!-- <li class="menu__item_footer"><a class="menu__link_footer" href='/'>Главная</a></li> -->
-            <li class="menu__item_footer"><a class="menu__link_footer" href='/about_project'>О проекте</a></li>
-            <li class="menu__item_footer"><a class="menu__link_footer" href="/team">Команда</a></li>
-            <!-- <li class="menu__item"><a class="menu__link" href="#">Партнеры</a></li>
-        <li class="menu__item"><a class="menu__link" href="#">Связаться</a></li> -->
-        </ul>
-        <p>&copy;2024 СППР | Все права защищены</p>
-    </footer>
+        <img src="./static/icons/aura logo.svg" alt="logo">
+        <img src="./static/img/Aura bubles text.svg" alt="title">
+        <div class="decsription">
+            <span class="large">это инновационная СППР</span><br>
+            <span class="small">мы помогли уже более <span class="highlight">10 000</span> HRам<br>
+                по всей России. Попробуй и ты!</span>
+            <span class="social-icons">
+                <a href="https://t.me/decision_support_system" target="_blank">
+                    <img src="./static/icons/tg-logo.svg" alt="Telegram">
+                </a>
+                <a href="https://vk.com/dss_ai" target="_blank">
+                    <img src="./static/icons/vk-logo.svg" alt="VK">
+                </a>
+            </span>
+        </div>
+        <div>
+            <button class="try-button"onclick="window.location.href = '/main_ai';">попробовать</button>
+        </div>
+        <img src="./static/img/first slide angel right.svg" alt="Angel">
+    </div>
 </body>
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </html>
