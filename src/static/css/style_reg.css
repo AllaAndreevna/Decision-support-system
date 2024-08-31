@@ -1,33 +1,19 @@
-/* style_reg.css */
-html,
+@font-face {
+    font-family: 'adineueprocyr_boldweb';
+    src: url('../fonts/adineueprocyr_boldweb.ttf');
+}
+
+@font-face {
+    font-family: 'adineueprocyr_lightweb';
+    src: url('../fonts/adineueprocyr_lightweb.ttf');
+}
+
 body {
+    background-color: #000000;
     margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-    /* background: #c4b55d57; */
-    background-color: #00261b57;
-    font-family: 'PT Sans', sans-serif;
-    /* background: rgba(32, 43, 51, 1); */
-
+    font-family: 'adineueprocyr_lightweb';
 }
 
-h1 {
-    margin-top: 10%;
-    font-weight: bold;
-    text-align: center;
-    padding-top: 10%;
-    color: black;
-}
-
-a {
-    color: #0059b2;
-    text-decoration: underline;
-    /* background-color: #00261b4d; */
-    border-radius: 5px;
-    width: fit-content; 
-    padding: 5px;
-}
 
 a:hover {
     color: #CC0000;
@@ -62,21 +48,23 @@ a:hover {
 .login-container {
     width: 300px;
     margin: 50px auto;
-    background-color: #fff;
     padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-image: linear-gradient(to bottom, #fff, #f7f7f7);
+    /* border: 1px solid #ddd;
+    border-radius: 10px; */
+
+
+}
+
+.form {
+    position: relative;
 }
 
 .login-form {
     margin-top: 20px;
     padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    /* border: 1px solid #ddd; */
+    /* border-radius: 10px; */
 }
 
 .form-group {
@@ -88,60 +76,86 @@ label {
     margin-bottom: 10px;
     font-weight: bold;
     padding: 5px 10px;
-    background-color: #f0f0f0ab; 
+    color: #fff;
     border-radius: 5px;
-    width: fit-content; 
-  }
+    width: fit-content;
+    font-family: 'adineueprocyr_lightweb';
+    font-size: 16px;
+    margin: 0px 10px;
+}
+
+
 
 input[type="email"],
-input[type="password"] {
-    width: 95%;
+input[type="password"],
+input[type="text"] {
+    width: 70%;
     height: 30px;
     padding: 7px;
-    border: 1px solid #ccc;
+    border: 1px solid #3C3C3C;
     border-radius: 5px;
-    background-color: #f7f7f7;
+    background-color: transparent;
+    margin: 0 auto;
+    display: block;
+
 
 }
 
-input[type="email"]::placeholder,
-input[type="password"]::placeholder,
-input[type="text"]::placeholder {
-  color: #282727; /* change the placeholder text color */
+input#username[type="text"] {
+    width: 70%;
+    height: 30px;
+    padding: 7px;
+    border: 1px solid #3C3C3C;
+    border-radius: 5px;
+    background-color: transparent;
+    margin: 0 auto;
+    display: block;
+}
+
+input::placeholder {
+    font-family: 'adineueprocyr_lightweb';
+    font-size: 16px;
+    /* change the font size */
 }
 
 button[type="submit"] {
-    width: 100%;
-    height: 40px;
-    background-color: #00261b;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
+    /* margin-top: 800px; */
+    height: 30px;
+    display: inline-block;
+    padding: 0px 30px;
+    border: 3px solid #E4B7FF;
+    border-radius: 50px;
+    background-color: transparent;
+    color: #E4B7FF;
+    font-size: 1.2em;
     cursor: pointer;
-    font-weight: bold;
-    border: 2px black;
+
+    font-family: 'adineueprocyr_boldweb';
+
+    margin-left: 33%;
+
+
 }
 
 button[type="submit"]:hover {
-    background-color: #e1d7a8;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: rgba(108, 92, 231, 0.2);
 }
 
 hr {
     margin-top: 20px;
     border: none;
-    border-top: 1px solid #ccc;
+    /* border-top: 1px solid #ccc; */
 }
 
 .flash {
     background-color: #f2dede;
     color: black;
     padding: 10px;
-    border: 1px solid #ebccd1;
+    border: 1px solid #E4B7FF;
     border-radius: 5px;
     margin-bottom: 20px;
 }
+
 /* 
 .login-container::before {
     content: "";
@@ -157,19 +171,12 @@ hr {
 
 
 
-* {
-    box-sizing: border-box;
-    /* font-family: sans-serif; */
-}
-
 .login {
     width: 320px;
     height: 450px;
-    border: 1px solid #CCC;
-    background: url(https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExOG1pdWx4a2d1Z2ZpOTFtcnYxNDA4dmF3M2p0YmtscjYydXMxZzhhNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/tOFKFDbeh9V7y/giphy.webp) center center no-repeat;
+    /* border: 1px solid #CCC; */
 
-    /* background: url(https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExMnV6ZzRreG04NW9jMnFxOHZzeTg5OHVmdHRkZmhtb29ycm50bGVyZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xT77Y9DVLJ2rNYMkZa/giphy.webp) center center no-repeat;
-    */
+    background: black;
     background-size: cover;
     margin: 30px auto;
     border-radius: 20px;
@@ -178,7 +185,7 @@ hr {
 .login .form {
     width: 100%;
     height: 100%;
-    padding: 15px 25px;
+    /* padding: 15px 25px; */
 }
 
 .login .form h2 {
@@ -190,16 +197,38 @@ hr {
     margin-bottom: 80px;
 }
 
+
 .login .form input {
-    width: 100%;
-    height: 40px;
+    width: 245px;
+    height: 25px;
     /* margin-top: 20px; */
-    background: rgba(255, 255, 255, .5);
-    border: 1px solid rgba(255, 255, 255, .1);
+    font-family: 'adineueprocyr_lightweb';
     padding: 0 15px;
-    color: black;
-    border-radius: 5px;
+    color: white;
+    border-radius: 15px;
     font-size: 14px;
+    align-items: center;
+}
+#username {
+    background-color: transparent;
+    width: 70%;
+    height: 30px;
+    padding: 7px;
+    border: 1px solid #3C3C3C;
+    border-radius: 5px !important;
+    margin: 0 auto;
+    display: block;
+}
+
+.username {
+    background-color: transparent;
+    width: 70%;
+    height: 30px;
+    padding: 7px;
+    border: 1px solid #3C3C3C;
+    border-radius: 5px;
+    margin: 0 auto;
+    display: block;
 }
 
 .login .form input:focus {
@@ -207,12 +236,23 @@ hr {
     outline: none;
 }
 
-::-webkit-input-placeholder {
-    color: #DDD;
+#username {
+    background-color: transparent;
+    width: 70%;
+    height: 30px;
+    padding: 7px;
+    border: 1px solid #3C3C3C;
+    border-radius: 5px;
+    margin: 0 auto;
+    display: block;
+}
+
+button[type="submit"] {
+    margin-left: 50%;
+    transform: translateX(-50%);
 }
 
 .login .form input.submit {
-    background: rgba(255, 255, 255, .9);
     color: #444;
     font-size: 15px;
     margin-top: 40px;
@@ -222,16 +262,17 @@ hr {
 
 
 input[type="checkbox"] {
-    display: none; /* скрываем стандартный чекбокс */
-  }
-  
-  input[type="checkbox"] + label {
+    display: none;
+    /* скрываем стандартный чекбокс */
+}
+
+input[type="checkbox"]+label {
     position: relative;
     padding-left: 25px;
     cursor: pointer;
-  }
-  
-  input[type="checkbox"] + label:before {
+}
+
+input[type="checkbox"]+label:before {
     content: "";
     position: absolute;
     top: 50%;
@@ -239,18 +280,19 @@ input[type="checkbox"] {
     transform: translateY(-50%);
     width: 20px;
     height: 20px;
+    font-family: 'adineueprocyr_lightweb';
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  input[type="checkbox"]:checked + label:before {
+}
+
+input[type="checkbox"]:checked+label:before {
     background-color: rgba(32, 43, 51, 1);
     border-color: #402704d6;
-  }
-  
-  input[type="checkbox"]:checked + label:after {
+}
+
+input[type="checkbox"]:checked+label:after {
     content: "";
     position: absolute;
     top: 50%;
@@ -258,16 +300,42 @@ input[type="checkbox"] {
     transform: translateY(-50%);
     width: 10px;
     height: 10px;
-    background-color: #fff;
+    background-color: #E4B7FF;
     border-radius: 50%;
-  }
+}
 
-  p {
+p {
     outline: 2px solid #FFFFFF;
     border: 5px white;
     border-radius: 5px;
     padding: 3%;
     background-color: rgba(255, 255, 255, 0.635);
     font-weight: bold;
-  }
-  
+    margin: 0px 10px;
+}
+
+.logo {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text {
+    color: white;
+    /* 3C3C3C */
+    font-family: 'adineueprocyr_lightweb';
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+.grey {
+    color: #3C3C3C;
+}
+
+.bottom_img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}

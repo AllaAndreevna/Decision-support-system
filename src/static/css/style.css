@@ -49,16 +49,15 @@ body {
   font-family: 'adineueprocyr_boldweb';
   font-size: 23px;
   top: 76px;
+  z-index: 1;
 }
 .text0 {
   left: 485px;
 }
-
 .text0 a {
   color: #fff;
   text-decoration: none;
 }
-
 .text1 {
   left: 720px;
 }
@@ -90,12 +89,12 @@ body {
   font-family: 'adineueprocyr_lightweb';
   color: #fff;
   margin-top: 400px;
-  text-align: left; /* add this line */
+  text-align: left; 
   margin-left: -360px;
   width: 100%;
 }
 .highlight {
-  color: #E4B7FF; /* change the color of the number to a pinkish hue */
+  color: #E4B7FF; 
 }
 .large {
   font-size: 3.4em;
@@ -106,21 +105,20 @@ body {
 
 .social-icons img {
   width: 40px; 
-  /* padding: 10px 10px; */
 }
 .try-button {
   margin-top: 800px;
   display: inline-block;
-  padding: 18px 40px; /* adjust the padding to your liking */
-  border: 1px solid #E4B7FF; /* your purple color */
-  border-radius: 50px; /* make the button oval */
-  background-color: transparent; /* make the button transparent */
-  color: #E4B7FF; /* set the text color to your purple color */
+  padding: 18px 40px; 
+  border: 1px solid #E4B7FF;
+  border-radius: 50px;
+  background-color: transparent; 
+  color: #E4B7FF; 
   font-size: 3.6em;
-  cursor: pointer; /* add a pointer cursor on hover */
+  cursor: pointer;
   font-family: 'adineueprocyr_lightweb';
 }
 
 .try-button:hover {
-  background-color: rgba(108, 92, 231, 0.2); /* add a subtle hover effect */
+  background-color: rgba(108, 92, 231, 0.2); 
 }
