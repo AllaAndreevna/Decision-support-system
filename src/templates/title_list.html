@@ -11,27 +11,49 @@
 </head>
 
 <body>
-    
-    <div class="text0 text">
-        <a href="/">Главная</a>
+    <div class="mobile_logo">
+        <img src="./static/icons/aura logo.svg" alt="logo">
     </div>
-    <div class="text1 text">
-        <a href='/profile'>Аккаунт</a>
+    <div class="menu">
+        <div class="menu-toggle"></div>
+        <ul class="menu-list">
+            <li><a href="/">Главная</a></li>
+            <li><a href="/profile">Аккаунт</a></li>
+            <li><a href="/about_project">О проекте</a></li>
+            <li><a href="/team">Команда</a></li>
+        </ul>
     </div>
-    <div class="text2 text">
-        <a href="/about_project">О проекте</a>
+    <!-- <img src="./static/img/left section1.svg" class="mobile_image left" alt="left section"> -->
+    <img src="./static/img/right section1.svg" class="mobile_image right" alt="right section">
+
+    <div class="mobile_title">СППР</div>
+    <div class="mobile_desc">это инновационная система<br>
+        мы помогли уже более <span class="highlight_mobile">100</span> HRам<br>
+        по всей России. Попробуй и ты!
     </div>
-    <div class="text3 text">
-        <a href="/team">Команда</a>
+
+
+    <div class="head_menu">
+        <div class="text0 text">
+            <a href="/">Главная</a>
+        </div>
+        <div class="text1 text">
+            <a href='/profile'>Аккаунт</a>
+        </div>
+        <div class="text2 text">
+            <a href="/about_project">О проекте</a>
+        </div>
+        <div class="text3 text">
+            <a href="/team">Команда</a>
+        </div>
     </div>
     <div class="image-row">
-        <img src="./static/img/first slide david right.svg" alt="David">
-
-        <img src="./static/icons/aura logo.svg" alt="logo">
-        <img src="./static/img/Aura bubles text.svg" alt="title">
+        <img src="./static/img/first slide david right.svg" class="david" alt="David">
+        <img src="./static/icons/aura logo.svg" class="desktop_logo" alt="logo">
+        <img src="./static/img/Aura bubles text.svg" class="bubble_text" alt="title">
         <div class="decsription">
             <span class="large">это инновационная СППР</span><br>
-            <span class="small">мы помогли уже более <span class="highlight">10 000</span> HRам<br>
+            <span class="small">мы помогли уже более <span class="highlight">100</span> HRам<br>
                 по всей России. Попробуй и ты!</span>
             <span class="social-icons">
                 <a href="https://t.me/decision_support_system" target="_blank">
@@ -43,10 +65,64 @@
             </span>
         </div>
         <div>
-            <button class="try-button"onclick="window.location.href = '/main_ai';">попробовать</button>
+            <button class="try-button1" onclick="window.location.href = '/main_ai';">попробовать</button>
+            <button class="try-button2" onclick="window.location.href = '#bottom';">попробовать</button>
+
         </div>
-        <img src="./static/img/first slide angel right.svg" alt="Angel">
+        <div class="mobile_how_it_works">как <span class="highlight_mobile">это</span> работает?</div>
+        <img src="./static/img/first slide angel right.svg" class="angel" alt="Angel">
+        <div class="container">
+            <img src="./static/icons/second slide upload.svg" alt="main info" class="upload_mobile">
+            <div class="text_about_using">загрузите своё <br> резюме</div>
+            <img src="./static/icons/second slide aura.svg" alt="main info" class="aura_analitics">
+            <div class="text_about_using">сппр его <br> проанализирует</div>
+            <div class="one_hundred"><span class="highlight_mobile">100</span>%</div>
+            <div class="text_about_using">узнай свой<br>процент успеха</div>
+            <div class="side-images1">
+                <img src="./static/img/left section2.svg" alt="main info" class="left-image">
+                <img src="./static/img/left section2prt2.svg" alt="main info" class="left-image1">
+            </div>
+            <div class="side-images2">
+                <img src="./static/img/right section2prt1.svg" alt="main info" class="right-image">
+                <img src="./static/img/right section2prt2.svg" alt="main info" class="right-image1">
+            </div>
+            <div>
+                <form action="/get_pdf" method="post" enctype="multipart/form-data" id="pdf-form">
+                    <label for="pdf-file">
+                        <img src="./static/icons/third slide upload button.png" alt="upload button"
+                            class="upload_modile">
+                        <input type="file" id="pdf-file" name="pdf-file" accept=".pdf, .doc, .docx, .txt"
+                            style="position: absolute; left: -9999px;">
+                    </label>
+                    <a id="bottom"></a>
+                    <button type="submit" class="upload-button">ЗАГРУЗИ</button>
+                    <div class="download_resume">
+                        СВОЁ РЕЗЮМЕ
+                    </div>
+                </form>
+            </div>
+            <div class="side-images3">
+                <img src="./static/img/left section3.svg" alt="main info">
+                <span class="icons_sm_mobile">
+                    <a href="https://t.me/decision_support_system" target="_blank">
+                        <img src="./static/icons/tg-logo.svg" alt="Telegram">
+                    </a>
+                    <a href="https://vk.com/dss_ai" target="_blank">
+                        <img src="./static/icons/vk-logo.svg" alt="VK">
+                    </a>
+                </span>
+                <img src="./static/img/right section 3.svg" alt="main info" class="right_corner">
+            </div>
+        </div>
     </div>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const menuList = document.querySelector('.menu-list');
+
+        menuToggle.addEventListener('click', () => {
+            menuList.style.display = menuList.style.display === 'block' ? 'none' : 'block';
+        });
+    </script>
 </body>
 
 </html>
