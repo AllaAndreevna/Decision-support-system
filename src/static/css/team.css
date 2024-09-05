@@ -1,5 +1,16 @@
+@font-face {
+    font-family: 'adineueprocyr_boldweb';
+    src: url('../fonts/adineueprocyr_boldweb.ttf');
+}
+
+@font-face {
+    font-family: 'adineueprocyr_lightweb';
+    src: url('../fonts/adineueprocyr_lightweb.ttf');
+}
+
 body {
-    font-family: 'PT Sans', sans-serif;
+    background-color: #000000;
+    margin: 0;
 }
 
 header {
@@ -7,6 +18,16 @@ header {
     padding: 20px;
     text-align: center;
 }
+
+
+
+.mobile_logo img {
+    margin-left: 20px;
+    height: 60px;
+    margin-top: 10px;
+}
+
+
 
 .menu {
     position: relative;
@@ -40,25 +61,18 @@ header {
     list-style: none;
 }
 
-/* .menu__link {
-    font-size: 1.2rem;
-    color: white;
-    margin: 0 10px;
-    display: inline-block;
-    transition: 0.5s;
-    text-decoration: none;
-    opacity: 0.75;
-    font-weight: 300;
-} */
-
-/* .menu__link:hover {
-    opacity: 1;
-} */
-
 .hero {
-    background-image: linear-gradient(to bottom, #f7f7f7, #00261b57);
-    padding: 100px;
+    padding: 10px;
     text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-family: 'adineueprocyr_boldweb';
+}
+
+.hero p {
+    font-family: 'adineueprocyr_lightweb';
 }
 
 .person-container {
@@ -68,6 +82,11 @@ header {
     border: 1px solid #ccc;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.person-container h1 {
+    font-family: 'adineueprocyr_boldweb';
+    color: white;
 }
 
 .person-photo {
@@ -80,12 +99,21 @@ header {
     border-radius: 50%;
 }
 
+.person-container h2 {
+    font-family: 'adineueprocyr_boldweb';
+    color: white;
+}
+
 .person-info h3 {
     margin-top: 0;
+    font-family: 'adineueprocyr_boldweb';
+    color: white;
 }
 
 .person-info p {
     margin-bottom: 10px;
+    font-family: 'adineueprocyr_lightweb';
+    color: white;
 }
 
 .person-container {
@@ -112,62 +140,75 @@ header {
     /* Добавляем отступы внутри блока */
 }
 
-footer {
-    background-color: #f0f0f0;
-    padding: 10px;
-    text-align: center;
-    color: #666;
-}
-
-.footer {
-    padding: 10px 20px;
-    margin-top: 5%;
-}
-
-.footer {
-    background: #00261b;
-    min-height: 100px;
-    padding: 20px 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    border-radius: 10px;
-}
-
-.footer p {
-    color: #fff;
-    margin: 15px 0 10px 0;
-    font-size: 1rem;
-    font-weight: 300;
+.last_container {
+    margin-bottom: 100px;
 }
 
 .menu {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px 0;
-    flex-wrap: wrap;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
 }
 
-.menu__item {
+.menu-list {
+    display: none;
+    position: absolute;
+    right: 20px;
+    background-color: black;
+    padding: 20px;
+    border: 1px solid #ddd;
+    font-family: 'adineueprocyr_boldweb';
+    width: 150px;
+    font-size: 1.2em;
+}
+
+.menu-list li {
     list-style: none;
+    margin-bottom: 10px;
 }
 
-.menu__link {
-    font-size: 1.2rem;
-    color: white;
-    margin: 0 10px;
-    display: inline-block;
-    transition: 0.5s;
+.menu-list a {
     text-decoration: none;
-    opacity: 0.75;
-    font-weight: 300;
+    color: white;
 }
 
-.menu__link:hover {
-    opacity: 1;
+.menu-toggle {
+    position: absolute;
+    /* top: 20px; */
+    right: 20px;
+    cursor: pointer;
+    /* margin-top: 10px; */
+    width: 30px;
+    height: 20px;
+    background-image: url('../img/menu.svg');
+    background-size: cover;
+    cursor: pointer;
+    margin-top: -130px;
+    right: 0;
+}
+
+.mobile_image {
+    position: absolute;
+
+    transform: translateY(-50%);
+}
+
+.mobile_image.left {
+    left: 0;
+    margin-top: 130px;
+}
+
+.mobile_image.right {
+    right: 0;
+    margin-top: 190px;
+}
+
+.mobile_logo img {
+    margin-left: 20px;
+    height: 60px;
+    margin-top: 10px;
+    right: 0;
 }
 
 .social-icon,
@@ -221,3 +262,93 @@ footer {
     cursor: pointer;
 }
 
+
+@media (min-width: 333px) {
+    .bottom {
+        display: none;
+    }
+}
+
+@media (max-width: 1670px) {
+    .background1 {
+        display: none;
+    }
+
+    .background2 {
+        display: none;
+    }
+}
+
+@media (min-width: 1670px) {
+    .mobile_logo {
+        position: relative;
+        z-index: 1000;
+    }
+
+    .mobile_logo img {
+        position: relative;
+        z-index: 1000;
+    }
+
+    .menu {
+        z-index: 1;
+
+    }
+
+    .team-row {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+        position: relative;
+        z-index: 0;
+    }
+
+    .background1 {
+        float: left;
+        width: 920px;
+        object-fit: cover;
+        z-index: 0;
+
+        margin-top: -300px;
+    }
+
+    .background2 {
+        float: right;
+        width: 920px;
+        object-fit: cover;
+        margin-top: -300px;
+        z-index: 0;
+
+    }
+
+    .background1 img {
+        object-fit: cover;
+        height: 300px;
+        width: 100%;
+    }
+
+    .background2 img {
+        object-fit: cover;
+        height: 300px;
+        width: 100%;
+    }
+
+    .person-wrapper {
+        margin: 0 20px;
+    }
+    .menu-toggle {
+        position: absolute;
+        /* top: 20px; */
+        right: 20px;
+        cursor: pointer;
+        /* margin-top: 10px; */
+        width: 50px;
+        height: 40px;
+        background-image: url('../img/menu.svg');
+        background-size: cover;
+        cursor: pointer;
+        margin-top: -130px;
+        right: 0;
+    }
+    
+}

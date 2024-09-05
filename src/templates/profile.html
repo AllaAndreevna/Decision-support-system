@@ -16,7 +16,6 @@
 </head>
 
 <body>
-
     <div class="text0 text">
         <a href="/">Главная</a>
     </div>
@@ -32,7 +31,15 @@
     <div class="logo">
         <img src="./static/icons/aura logo.svg" alt="logo">
     </div>
-
+    <div class="menu">
+        <div class="menu-toggle"></div>
+        <ul class="menu-list">
+            <li><a href="/">Главная</a></li>
+            <li><a href="/profile">Аккаунт</a></li>
+            <li><a href="/about_project">О проекте</a></li>
+            <li><a href="/team">Команда</a></li>
+        </ul>
+    </div>
 
     <section class="hero">
         <h1>Ваш профиль</h1>
@@ -48,17 +55,26 @@
         <div class='small'>
             Теперь вам доступна возможность<br> <b>воспользоваться</b> нашей <b>разработкой</b>
         </div>
-
-        <p>Нажмите</p>
-
-        <b><a href='/main_ai' class='start-button'>Начать</a></b>
-
+        <b><a href='/main_ai' class='start-button try-button1'>Начать</a></b>
+        <b><a href='/' class='start-button try-button2'>Начать</a></b>
+        <div class="side-images3">
+            <img src="./static/img/left section3.svg" alt="main info">
+            <img src="./static/img/right section 3.svg" alt="main info" class="right_corner">
+        </div>
     </section>
 
 
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const menuList = document.querySelector('.menu-list');
+
+        menuToggle.addEventListener('click', () => {
+            menuList.style.display = menuList.style.display === 'block' ? 'none' : 'block';
+        });
+    </script>
 </body>
 
 </html>
