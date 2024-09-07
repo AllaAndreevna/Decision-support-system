@@ -6,15 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ваш результат</title>
     <link rel="icon" href=" {{ url_for ('static', filename='icons/aura logo.svg') }}" type="image/x-icon">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/bad_result.css') }}">
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename = 'css/result.css') }}">
 </head>
 
 <body>
+    <div class="mobile_logo"></div>
+    <img src="./static/icons/aura logo.svg" alt="logo">
+    </div>
+    <div class="menu">
+        <div class="menu-toggle"></div>
+        <ul class="menu-list">
+            <li><a href="/">Главная</a></li>
+            <li><a href="/profile">Аккаунт</a></li>
+            <li><a href="/about_project">О проекте</a></li>
+            <li><a href="/team">Команда</a></li>
+        </ul>
+    </div>
     <div class="main_block">
-        <br>
-        <br>
-        <br>
-        <br>
         <br>
         <div id="text">
             Ваша вероятность получить работу составляет:
@@ -73,25 +81,24 @@
         document.getElementById("result").innerHTML = result + '%';
     </script>
 </body>
-
-<footer class="footer">
-    <ul class="social-icon">
-        <li class="social-icon__item"><a class="social-icon__link" href="https://vk.com/club225244210">
-                <ion-icon name="logo-vk"></ion-icon>
-            </a></li>
-        <li class="social-icon__item"><a class="social-icon__link" href="https://t.me/decision_support_system">
-                <img src="./static/icons/icons-telegram.svg" alt="Telegram">
-            </a></li>
-    </ul>
-    <ul class="menu">
-        <li class="menu__item"><a class="menu__link" href='/'>Главная</a></li>
-        <li class="menu__item"><a class="menu__link" href="/about_project">О проекте</a></li>
-        <li class="menu__item"><a class="menu__link" href="/team">Команда</a></li>
-        <li class="menu__item"><a class="menu__link" href="/profile">Профиль</a></li>
-
-    </ul>
-    <p>&copy;2024 СППР | Все права защищены</p>
-</footer>
+<div class="footer_links">
+    <a href="/">главная</a>
+    <a href="/about_project">о проекте</a>
+    <a href='/profile'>аккаунт</a>
+    <a href="/team">команда</a>
+</div>
+<div class="side-images3">
+    <img src="./static/img/left section3.svg" alt="main info">
+    <span class="icons_sm_mobile">
+        <a href="https://t.me/decision_support_system" target="_blank">
+            <img src="./static/icons/tg-logo.svg" alt="Telegram">
+        </a>
+        <a href="https://vk.com/dss_ai" target="_blank">
+            <img src="./static/icons/vk-logo.svg" alt="VK">
+        </a>
+    </span>
+    <img src="./static/img/right section 3.svg" alt="main info" class="right_corner">
+</div>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 

@@ -1,20 +1,29 @@
-@charset "UTF-8";
+@font-face {
+    font-family: 'adineueprocyr_boldweb';
+    src: url('../fonts/adineueprocyr_boldweb.ttf');
+}
+
+@font-face {
+    font-family: 'adineueprocyr_lightweb';
+    src: url('../fonts/adineueprocyr_lightweb.ttf');
+}
 
 body {
-    font-family: 'PT Sans', sans-serif;
-    width: 100%;
+    background-color: #000000;
+    margin: 0;
 }
 
 .main_block {
-    background-color: white;
-    border-right: 80px solid #00261b;
-    border-left: 80px solid #00261b;
-    /* padding: 250px; */
+    /* border-right: 80px solid #00261b;
+    border-left: 80px solid #00261b; */
+    background-color: #000000;
 
 }
 
 #text {
-    color: #283618;
+    font-family: 'adineueprocyr_lightweb';
+    color: white;
+    background-color: #000000;
     font-size: 60px;
     font-weight: bold;
     /* justify-content: center; */
@@ -25,8 +34,8 @@ body {
 }
 
 #text1 {
-    color: #283618;
-    /* font-family: 'Georgia'; */
+    color: white;
+    font-family: 'adineueprocyr_boldweb';
     font-size: 50px;
     font-weight: bold;
     justify-content: center;
@@ -37,8 +46,8 @@ body {
 }
 
 .result {
-    color: #bc6c25;
-    font-family: 'Georgia';
+    color: #E4B7FF;
+    font-family: 'adineueprocyr_boldweb';
     font-size: 300px;
     font-weight: bold;
     justify-content: center;
@@ -46,89 +55,130 @@ body {
 }
 
 .smth_about_person {
-    border: 10px dashed #00261b;
+    border: 2px dashed #E4B7FF;
     justify-content: center;
-    background-color: #00261b57;
-    color: #2b2d42;
+    background-color: black;
     font-size: 50px;
     display: flex;
     width: 85%;
     border-radius: 70px;
     margin-left: auto;
     margin-right: auto;
-
+    color: black;
 }
 
 #text_about_person {
     margin: 10%;
-    color: #00261b;
+    color: white;
+    font-family: 'adineueprocyr_lightweb';
+    text-align: center;
 
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+#text_about_person a {
+    color: #E4B7FF;
+    font-family: 'adineueprocyr_lightweb';
 
-.footer {
-    background: #00261b;
-    min-height: 100px;
-    padding: 20px 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    /* border-radius: 10px; */
 }
 
-.social-icon,
+.mobile_logo img {
+    margin-left: 20px;
+    height: 40px;
+    margin-top: 10px;
+}
+
 .menu {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px 0;
-    flex-wrap: wrap;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
 }
 
-.social-icon__item,
-.menu__item {
+.menu-list {
+    display: none;
+    position: absolute;
+    right: 20px;
+    background-color: black;
+    padding: 20px;
+    border: 1px solid #ddd;
+    font-family: 'adineueprocyr_boldweb';
+    width: 150px;
+    font-size: 1.2em;
+}
+
+.menu-list li {
     list-style: none;
+    margin-bottom: 10px;
 }
 
-.social-icon__link {
-    font-size: 2rem;
-    color: #fff;
-    margin: 0 10px;
-    display: inline-block;
-    transition: 0.5s;
-}
-
-.social-icon__link:hover {
-    transform: translateY(-10px);
-}
-
-.menu__link {
-    font-size: 1.2rem;
-    color: #fff;
-    margin: 0 10px;
-    display: inline-block;
-    transition: 0.5s;
+.menu-list a {
     text-decoration: none;
-    opacity: 0.75;
-    font-weight: 300;
+    color: white;
 }
 
-.menu__link:hover {
-    opacity: 1;
+.menu-toggle {
+    position: relative;
+    margin-top: 20px;
+    margin-right: 20px;
+    /* margin-top: -140px; */
+    width: 30px;
+    height: 20px;
+    background-image: url('../img/menu.svg');
+    background-size: cover;
+    cursor: pointer;
+    /* margin-left: 90px; */
 }
 
-.footer p {
-    color: #fff;
-    margin: 15px 0 10px 0;
-    font-size: 1rem;
-    font-weight: 300;
+
+.side-images3 {
+    position: relative;
+    top: 0;
+    width: 100%;
+    right: 0;
+    /* margin-top: -33px; */
+}
+
+.right_corner {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.icons_sm_mobile img {
+    width: 40px;
+}
+
+.icons_sm_mobile {
+    /* margin-bottom: 50px;
+    margin-left: 50px; */
+    position: absolute;
+    margin-top: 120px;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+.footer_links {
+    color: white;
+    font-family: 'adineueprocyr_lightweb';  
+    display: block;
+    padding: 10px;
+    /* margin-left: 20%; */
+    position: relative;
+    top: 70px; /* move the element down 50px */
+    font-size: 1.5em;
+    text-align: center;
+    z-index: 10;
+}
+
+.footer_links a {
+    color: white;
+    text-decoration: none;
+    z-index: 10;
 }
 
 .text {
-    background-color: #f7f7f7;
+    background-color: black;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 20px;
@@ -139,15 +189,13 @@ body {
 
 }
 
-.text::before {
+/* .text::before {
     content: "";
-    /* add a pseudo-element to create a top border */
     display: block;
     height: 2px;
     background-color: #ccc;
-    /* light gray top border */
     margin-bottom: 10px;
-}
+} */
 
 .text p {
     margin-bottom: 20px;
@@ -160,10 +208,10 @@ body {
 
 @media only screen and (max-width: 2560px) {
 
-    .main_block {
+    /* .main_block {
         border-right: 50px solid #00261b;
         border-left: 50px solid #00261b;
-    }
+    } */
 
     #text {
         font-size: 20px;
@@ -173,6 +221,7 @@ body {
     #text1 {
         font-size: 54px;
         padding: 10px;
+        text-align: center;
     }
 
     .result {
@@ -181,7 +230,7 @@ body {
     }
 
     .smth_about_person {
-        border: 5px dashed #00261b;
+        border: 2px dashed #E4B7FF;
         padding: 10px;
         font-size: 18px;
     }
@@ -215,14 +264,15 @@ body {
 
 @media (max-width: 475px) {
     .main_block {
-        background-color: white;
-        border-right: 10px solid #00261b;
-        border-left: 10px solid #00261b;
+        background-color: black;
+        /* border-right: 10px solid #00261b;
+        border-left: 10px solid #00261b; */
     }
 
     #text1 {
         font-size: 1.3rem;
         margin-top: 5%;
+        text-align: center;
     }
 
     .text {
@@ -231,19 +281,19 @@ body {
 
     #text_about_person {
         margin: 10%;
-        color: #00261b;
+        color: white;
     }
 
     .smth_about_person {
-        border: 3px dashed #00261b;
+        border: 2px dashed #E4B7FF;
     }
 }
 
 @media only screen and (min-width: 475px) and (max-width: 835px) {
     .main_block {
-        background-color: white;
-        border-right: 50px solid #00261b;
-        border-left: 50px solid #00261b;
+        background-color: black;
+        /* border-right: 50px solid #00261b;
+        border-left: 50px solid #00261b; */
         width: 100%;
     }
 
@@ -257,17 +307,19 @@ body {
 
     #text1 {
         font-size: 2rem;
+        text-align: center;
     }
 
     #text_about_person {
         margin: 5%;
-        color: #00261b;
+        color: white;
         font-size: 1.5rem;
         padding: 10%;
+
     }
 
     .smth_about_person {
-        border: 5px dashed #00261b;
+        border: 2px dashed #E4B7FF;
     }
 
     .footer {
@@ -286,10 +338,11 @@ body {
 
     #text1 {
         font-size: 3rem;
+        text-align: center;
     }
 
     #text_about_person {
-        color: #00261b;
+        color: white;
         font-size: 1.5rem;
         padding: 5%;
         margin: 0;
@@ -302,29 +355,36 @@ body {
         font-size: 3.5rem;
         margin-left: 10%;
     }
-    #text1{
+
+    #text1 {
         font-size: 2.5rem;
+        text-align: center;
     }
+
     .main_block {
-        background-color: white;
-        border-right: 120px solid #00261b;
-        border-left: 120px solid #00261b;
-        
+        background-color: black;
+        /* border-right: 120px solid #00261b;
+        border-left: 120px solid #00261b; */
+
     }
+
     .result {
         font-size: 10rem;
     }
+
     #text_about_person {
-        color: #00261b;
+        color: white;
         font-size: 1.5rem;
         padding: 5%;
         margin: 0;
     }
+
     .text {
-        margin: 7%;
+        margin: 7% auto;
     }
+
     #text_about_person {
-        color: #00261b;
+        color: white;
         font-size: 1.5rem;
         padding: 3%;
         margin: 0;

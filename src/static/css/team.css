@@ -27,7 +27,7 @@ header {
     margin-top: 10px;
 }
 
-
+/* 
 
 .menu {
     position: relative;
@@ -36,6 +36,7 @@ header {
     align-items: center;
     margin: 10px 0;
     flex-wrap: wrap;
+    z-index: 1;
 }
 
 .menu__item1 {
@@ -59,7 +60,7 @@ header {
 
 .menu__item {
     list-style: none;
-}
+} */
 
 .hero {
     padding: 10px;
@@ -282,18 +283,17 @@ header {
 @media (min-width: 1670px) {
     .mobile_logo {
         position: relative;
-        z-index: 1000;
+        z-index: 1;
     }
 
     .mobile_logo img {
         position: relative;
         z-index: 1000;
+        width: 150px;
+        height: 150px;
+        
     }
 
-    .menu {
-        z-index: 1;
-
-    }
 
     .team-row {
         display: flex;
@@ -336,19 +336,10 @@ header {
     .person-wrapper {
         margin: 0 20px;
     }
+
     .menu-toggle {
-        position: absolute;
-        /* top: 20px; */
-        right: 20px;
-        cursor: pointer;
-        /* margin-top: 10px; */
         width: 50px;
         height: 40px;
-        background-image: url('../img/menu.svg');
-        background-size: cover;
-        cursor: pointer;
-        margin-top: -130px;
-        right: 0;
+        margin-top: -220px;
     }
-    
 }

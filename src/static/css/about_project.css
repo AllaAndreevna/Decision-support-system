@@ -1,9 +1,16 @@
+@font-face {
+    font-family: 'adineueprocyr_boldweb';
+    src: url('../fonts/adineueprocyr_boldweb.ttf');
+}
+
+@font-face {
+    font-family: 'adineueprocyr_lightweb';
+    src: url('../fonts/adineueprocyr_lightweb.ttf');
+}
+
 body {
-    font-family: 'PT Sans', sans-serif;
+    background-color: #000000;
     margin: 0;
-    padding: 0;
-    font-size: 18px;
-    line-height: 1.5;
 }
 
 header {
@@ -22,15 +29,60 @@ p {
     margin-bottom: 20px;
 }
 
+
+.menu {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.menu-list {
+    display: none;
+    position: absolute;
+    right: 20px;
+    background-color: black;
+    padding: 20px;
+    border: 1px solid #ddd;
+    font-family: 'adineueprocyr_boldweb';
+    width: 150px;
+    font-size: 1.2em;
+}
+
+.menu-list li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.menu-list a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu-toggle {
+    position: absolute;
+    /* top: 20px; */
+    right: 20px;
+    cursor: pointer;
+    /* margin-top: 10px; */
+    width: 30px;
+    height: 20px;
+    background-image: url('../img/menu.svg');
+    background-size: cover;
+    cursor: pointer;
+    margin-top: -130px;
+    right: 0;
+}
+
 .hero {
-    background-image: linear-gradient(to bottom, #f7f7f7, #00261b57);
-    padding: 100px;
     text-align: center;
 }
 
 .hero h1 {
     font-size: 36px;
     margin-bottom: 10px;
+    color: white;
+    font-family: 'adineueprocyr_boldweb';
 }
 
 .hero img {
@@ -41,12 +93,18 @@ p {
     margin: 20px;
 }
 
+.hero p {
+    color: white;
+    font-family: 'adineueprocyr_lightweb';
+}
+
 .content {
     padding: 20px;
 }
 
 .content h2 {
     margin-top: 20px;
+
 }
 
 footer {
@@ -80,12 +138,20 @@ footer {
 
 .relevance {
     padding: 5%;
+    background-color: #000000;
+    color: white;
+    font-family: 'adineueprocyr_lightweb';
+}
+
+.relevance a {
+    color: #E4B7FF;
 }
 
 .quote {
     padding-left: 50px;
-    border-left: 4px solid #00261b57;
-    font-family: 'Georgia', 'Times New Roman', serif;
+    border-left: 4px solid #E4B7FF;
+    font-family: 'adineueprocyr_lightweb';
+
 }
 
 .quote p {
@@ -93,7 +159,6 @@ footer {
     font-weight: normal;
     font-size: 22px;
     line-height: 28px;
-    color: #333333;
 }
 
 .quote cite {
@@ -117,6 +182,23 @@ footer {
     grid-column: 1;
     margin-left: 5%;
     margin-right: 10%;
+    color: white;
+}
+
+.short-desc h2 {
+    grid-column: 1;
+    margin-left: 5%;
+    margin-right: 10%;
+    color: white;
+    font-family: 'adineueprocyr_boldweb';
+}
+
+.short-desc li {
+    grid-column: 1;
+    margin-left: 5%;
+    margin-right: 10%;
+    color: white;
+    font-family: 'adineueprocyr_lightweb';
 }
 
 .short_desc p {
@@ -145,11 +227,13 @@ footer {
 } */
 
 .works_adv {
-    background-color: #f7f7f7;
+    background-color: black;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     flex: 1;
+    font-family: 'adineueprocyr_lightweb';
+    color: white:
 }
 
 .works_adv1 {
@@ -233,10 +317,25 @@ footer {
 }
 
 .info-container {
-    background-color: #f5f5f5;
-    padding: 40px;
+    background-color: black;
+    padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+}
+
+.info-container h2 {
+    font-family: 'adineueprocyr_boldweb';
+    color: white;
+}
+
+.info-container h3 {
+    font-family: 'adineueprocyr_lightweb';
+    color: white;
+}
+
+.info-container p {
+    font-family: 'adineueprocyr_lightweb';
+    color: white;
 }
 
 .main-info {
@@ -272,26 +371,12 @@ p {
     margin: 0 auto 20px;
 }
 
-/* .actuality p {
-    width: 60%;
-    text-align: center;
-    margin: 15px;
-    font-size: 110%;
-    margin-top: 5%;
-    font-weight: bold;
-    width: fit-content;
-} */
-
-/* .actuality.wow.animate__animated.animate__pulse {
-    animation-iteration-count: infinite;
-    animation-duration: 2s;
+.actuality {
+    color: white;
+    background-color: #000000;
+    font-family: 'adineueprocyr_lightweb';
+    border: 1px solid #E4B7FF;
 }
-.works_adv.wow.animate__animated.animate__pulse {
-    animation-iteration-count: infinite;
-    animation-duration: 2s;
-}
- */
-
 
 .social-icon,
 .menu {
