@@ -150,6 +150,7 @@ header {
     top: 20px;
     right: 20px;
     cursor: pointer;
+    z-index: 10;
 }
 
 .menu-list {
@@ -188,7 +189,14 @@ header {
     margin-top: -130px;
     right: 0;
 }
-
+@media (min-width: 1440px) {
+    .menu-toggle {
+        width: 50px;
+        height: 40px;
+        margin-top: -130px;
+        right: 40px;
+    }
+}
 .mobile_image {
     position: absolute;
 
@@ -220,6 +228,7 @@ header {
     align-items: center;
     margin: 10px 0;
     flex-wrap: wrap;
+    z-index: 10;
 }
 
 .social-icon__item,
@@ -291,7 +300,7 @@ header {
         z-index: 1000;
         width: 150px;
         height: 150px;
-        
+
     }
 
 
@@ -337,9 +346,5 @@ header {
         margin: 0 20px;
     }
 
-    .menu-toggle {
-        width: 50px;
-        height: 40px;
-        margin-top: -220px;
-    }
+
 }
