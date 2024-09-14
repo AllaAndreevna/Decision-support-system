@@ -7,56 +7,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>СППР</title>
     <link rel="icon" href=" {{ url_for ('static', filename='icons/aura logo.svg') }}" type="image/x-icon">
-    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename = 'css/main_ai.css') }}">
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename = '/css/main_ai.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-
-    <script>
-        new WOW().init();
-    </script>
 </head>
 
 <body>
-
-
     <div class="image-row">
-        <img src="./static/img/second slide left.svg" alt="background">
-        <!-- <div class="columns">
-            <div class="upper_column">
-                <img src="./static/img/colomn 4.svg" alt="column">
-                <img src="./static/img/colomn 5.svg" alt="column">
-                <img src="./static/img/colomn 6.svg" alt="column">
-            </div>
-            <div class="value">
-                <img src="./static/icons/second slide upload.svg" alt="upload" class="upload-icon">
-                <div class="text1 text">загрузите своё <br> резюме</div>
-            </div>
-            <div>
-                <img src="./static/icons/second slide aura.svg" alt="aura" class="aura-icon">
-                <div class="text2 text">сппр его<br>проанализирует</div>
-            </div>
-            <div class="value2">
-                <span class="one_hundred">100<span class="pro">%</span></span>
-                <div class="text3 text">узнай свой<br>процент успеха</div>
-            </div>
-            <div class="bottom_column">
-                <img src="./static/img/colomn 1.svg" alt="column">
-                <img src="./static/img/colomn 2.svg" alt="column">
-                <img src="./static/img/colomn 3.svg" alt="column">
-            </div>
-        </div> -->
-        <img src="./static/img/second slide.svg" alt="background">
-        <img src="./static/img/second slide right.svg" alt="background">
+        <img src="./static/img/second slide left.svg" >
+        <img src="./static/img/second slide.svg" class="background1">
+        <img src="./static/img/second slide right.svg" class="background2">
     </div>
+
     <div class="container">
         <img src="./static/img/third slide left hand.svg" alt="left hand">
+
         <form action="/get_pdf" method="post" enctype="multipart/form-data" id="pdf-form">
             <label for="pdf-file">
                 <img src="./static/icons/third slide upload button.png" alt="upload button">
                 <input type="file" id="pdf-file" name="pdf-file" accept=".pdf, .doc, .docx, .txt" style="position: absolute; left: -9999px;">
-            </label>    
+            </label>  
+            <div class="instruction">Нажмите на картинку сверху, выберите файл, потом нажмите на кнопку снизу</div>  
             <button type="submit" class="upload-button">загрузить</button>
         </form>
+
         <img src="./static/img/third slide right hand.png" alt="right hand">
     </div>
 </body>

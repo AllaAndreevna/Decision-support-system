@@ -29,18 +29,16 @@ a:hover {
 }
 
 .flash.success {
-    border: 1px solid #17f857;
-    background: #0ad71595;
+    border: 1px solid #E4B7FF;
     /* color: #e5dbaf; */
-    color: black;
+    color: white;
     width: 50%;
     margin: 0 auto;
 }
 
 .flash.error {
-    border: 1px solid #FF4343;
-    background: #d13737;
-    color: black;
+    border: 1px solid #E4B7FF;
+    color: white;
     width: 50%;
     margin: 0 auto;
 }

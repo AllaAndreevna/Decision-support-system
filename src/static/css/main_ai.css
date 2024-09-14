@@ -11,21 +11,25 @@
 body {
   background-color: black;
   margin: 0;
+  width: 100%;
 }
 
 .image-row {
   display: flex;
-  align-items: flex-start;
   justify-content: space-between;
-  position: relative;
-  /* height: 100%; */
+  align-items: center;
+  padding: 0;
+  width: 100vw;
 }
+
+
 
 .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0;
+  width: 100vw;
 }
 
 .upload_button {
@@ -102,7 +106,6 @@ body {
 }
 
 .upload-button {
-  margin-top: 800px;
   /* display: inline-block; */
   padding: 18px 40px;
   /* adjust the padding to your liking */
@@ -119,11 +122,44 @@ body {
   /* add a pointer cursor on hover */
   font-family: 'adineueprocyr_lightweb';
   display: block;
-  margin-top: 100px;
+  margin-top: 60px;
   margin-left: 150px;
 }
 
 .upload-button:hover {
   background-color: rgba(108, 92, 231, 0.2);
   /* add a subtle hover effect */
+}
+
+/* .background2 {
+  position: fixed;
+  right: 0;
+  top: 0;
+  transform: translateZ(0);
+} */
+
+.instruction{
+  color: white;
+  font-family: 'adineueprocyr_boldweb';
+  margin-top: 20px;
+  font-size: 2em;
+  width: 616px;
+  text-align: center;
+}
+
+.background0 {
+  left: 0;
+}
+
+@media (max-width: 2100px) {
+  .background2 {
+    right: 0;
+    /* position: relative; */
+    margin-left: 80px;
+    /* Adjust the top position to the middle of the screen */
+    /* transform: translateY(-50%); */
+  }
+  .background1 {
+    margin-left: 170px;
+  }
 }

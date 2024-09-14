@@ -13,7 +13,26 @@ body {
   margin: 0;
 }
 
+.instruction {
+  color: white;
+  font-family: 'adineueprocyr_boldweb';
+  margin-top: 30px;
+  font-size: 1em;
+  width: 240px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
 @media (min-width: 1024px) {
+  .angel {
+    height: auto;
+  }
+
+  .instruction {
+    display: none;
+  }
+
   .image-row {
     display: flex;
     align-items: flex-start;
@@ -254,7 +273,7 @@ body {
 
     margin-left: -150px; */
     display: none;
-    
+
 
   }
 
